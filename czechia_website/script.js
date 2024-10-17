@@ -37,6 +37,7 @@ function generateNavbar() {
 
 function generateSection(page) {
   var jsonFile = page === 'index.html' ? 'index.json' : 'history.json';
+  console.log(page);
 
   fetch(jsonFile)
     .then(response => response.json())
