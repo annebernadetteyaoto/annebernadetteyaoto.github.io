@@ -1,23 +1,24 @@
+var currentPage = window.location.pathname.split("/").pop();
+
 function generateNavbar() {
-    var navbar = document.getElementById("navbar");
-    var currentPage = window.location.pathname.split("/").pop(); 
-    var pages = {
-        "index.html": "Home",
-        "history.html": "History",
-        "culture.html": "Culture",
-        "food.html": "Food and Drink",
-        "tourist-spots.html": "Tourist Spots",
-        "language.html": "Language",
-        "trivia.html": "Trivia"
-    };
+  var navbar = document.getElementById("navbar");
+  var pages = {
+    "index.html": "Home",
+    "history.html": "History",
+    "culture.html": "Culture",
+    "food.html": "Food and Drink",
+    "tourist-spots.html": "Tourist Spots",
+    "language.html": "Language",
+    "trivia.html": "Trivia"
+  };
 
-    var navItems = "";
-    for (var page in pages) {
-        var activeClass = (page === currentPage) ? "active" : "";
-        navItems += `<li class="nav-item"><a class="nav-link ${activeClass}" href="${page}">${pages[page]}</a></li>`;
-    }
+  var navItems = "";
+  for (var page in pages) {
+    var activeClass = (page === currentPage) ? "active" : "";
+    navItems += `<li class="nav-item"><a class="nav-link ${activeClass}" href="${page}">${pages[page]}</a></li>`;
+  }
 
-    navbar.innerHTML = `
+  navbar.innerHTML = `
       <nav class="navbar bg-dark navbar-expand-lg opacity-75" data-bs-theme="dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
@@ -34,41 +35,196 @@ function generateNavbar() {
     `;
 }
 
-function generateSection() {
-    var section = [
-        {
-          heading: 'Welcome to Česká Republika',
-          text: '<b>Czechia</b>, officially the <b>Czech Republic</b>, is a Central European country known for its rich history, stunning architecture, and vibrant culture. Its capital, Prague, is famous for landmarks like Prague Castle and Charles Bridge. Czechia boasts a strong tradition in arts and literature, with notable figures such as Franz Kafka and Antonín Dvořák.',
-          backgroundImage: 'images/prague castle.jpeg'
-        },{
-          heading: 'Name and Etymology',
-          text: 'The name <b>“Czech”</b> comes from the Czech people, a Slavic ethnic group. <b>"Czechia"</b> was adopted in 2016 as a shorter, official name for the country.',
-          backgroundImage: 'images/budejovice.jpg'
-        },{
-          heading: 'Geography',
-          text: 'Czechia is a landlocked country bordered by Germany, Poland, Slovakia, and Austria. It features diverse landscapes, including mountains and plains, and is divided into three historical regions: Bohemia, Moravia, and Silesia.',
-          backgroundImage: 'images/geography.jpg'
-        },{
-          heading: 'Capital City',
-          text: '<b>Prague (Praha)</b> is the capital city, known as <b>"the City of a Hundred Spires"</b> for its many historic churches and towers. Key attractions include Prague Castle, Charles Bridge, and the Old Town Square.',
-          backgroundImage: 'images/bridge.jpg'
-        },{
-          heading: 'Language',
-          text: 'The official language is <b>Czech</b>, a West Slavic language that uses the Latin alphabet. It is a vital part of national identity and is taught in schools. ',
-          backgroundImage: 'images/language.jpg'
-        },{
-          heading: 'Population',
-          text: 'Czechia has a population of about <b>10.5 million</b>, primarily ethnic Czechs, with small minority groups. It boasts a high standard of living and a strong education system.',
-          backgroundImage: 'images/crowd.jpg'
-        },{
-          heading: 'Religion ',
-          text: 'Czechia is predominantly <b>non-religious</b>, including atheists and agnostics, but they are historically predominantly Catholics. Today only 10-11% of Czechs are Catholics. Other religions include Protestantism, Orthodox Christianity, and Judaism.',
-          backgroundImage: 'images/religion.jpg'
-        }
-      ];
-  
-      for(var i=0; i<section.length; i++) {
-        var container = document.getElementById('fullpage');
-        container.innerHTML += "<div class='section " + section[i].className + "' style='background-image: url(\"" + section[i].backgroundImage + "\");'><div class='col-7 ps-5 text-white'><h1>" + section[i].heading + "</h1><p><small>" + section[i].text + "</small></p></div></div>";
-      };
+function generateSection(page) {
+  var jsonFile = page === 'index.html' ? './index.json' : './history.json';
+
+  fetch(jsonFile)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json();
+    })
+    .then(data => {
+      var sections = data.sections || [];
+      var container = document.getElementById('fullpage');
+      container.innerHTML = ''; // Clear existing content
+
+      sections.forEach(section => {
+        container.innerHTML += `
+          <div class='section' style='background-image: url("${section.backgroundImage}");'>
+              <div class='col-7 ps-5 text-white'>
+                  <h1>${section.heading}</h1>
+                  <p><small>${section.text}</small></p>
+              </div>
+          </div>`;
+      });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
 }
+
+
+
+function generateCard(page) {
+  var cards = {
+    "food.html": [
+      {
+        "popularDishes": [
+          {
+            header: 'Svíčková',
+            description: 'A creamy sauce made from root vegetables, served with marinated beef and bread dumplings.',
+            ingredients: '',
+            instructions: '',
+          },
+          {
+            header: 'dish2',
+            description: '',
+            ingredients: '',
+            instructions: '',
+          },
+          {
+            header: 'dish3',
+            description: '',
+            ingredients: '',
+            instructions: '',
+          }
+        ],
+        "popularDrinks": [
+          {
+            header: 'drink1',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          },
+          {
+            header: 'drink2',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          },
+          {
+            header: 'drink3',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          }
+        ],
+        "traditionalDishes": [
+          {
+            header: 'dish1',
+            description: '',
+            ingredients: '',
+            instructions: '',
+          },
+          {
+            header: 'dish2',
+            description: '',
+            ingredients: '',
+            instructions: '',
+          }
+        ],
+        "traditionalDrinks": [
+          {
+            header: 'drink1',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          },
+          {
+            header: 'drink2',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          }
+        ],
+        "nationalFoodAndDish": [
+          {
+            header: 'dish',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          },
+          {
+            header: 'drink',
+            description: '',
+            ingredients: false,
+            instructions: false,
+          },
+        ]
+      }
+    ]
+  }
+  const data = cardsData[page][0];
+
+  data.popularDishes.forEach((dish, index) => {
+    generateCard(dish, 'popular-dishes', index);
+  });
+
+  data.traditionalDishes.forEach((dish, index) => {
+    generateCard(dish, 'traditional-dishes', index);
+  });
+
+  data.popularDrinks.forEach((drink, index) => {
+    generateCard(drink, 'popular-drinks', index);
+  });
+
+  data.traditionalDrinks.forEach((drink, index) => {
+    generateCard(drink, 'traditional-drinks', index);
+  });
+
+  data.nationalFoodAndDish.forEach((dish, index) => {
+    if (index === 0) generateCard(dish, 'national-dish', index);
+  });
+
+  data.nationalFoodAndDish.forEach((dish, index) => {
+    if (index === 1) generateCard(dish, 'national-drink', index);
+  });
+}
+
+function generateCard(item, containerId, index) {
+  const container = document.getElementById(containerId);
+  const cardId = `card-${containerId}-${index}`;
+
+  let modalButtons = '';
+  if (item.ingredients) {
+    modalButtons += `<button class="btn btn-primary" data-toggle="modal" data-target="#modal-${cardId}">Ingredients</button>`;
+  }
+  if (item.instructions) {
+    modalButtons += `<button class="btn btn-primary" data-toggle="modal" data-target="#modal-${cardId}">Instructions</button>`;
+  }
+
+  container.innerHTML += `
+    <div class="col-4 mb-3">
+      <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${item.header}</h5>
+          <p class="card-text">${item.description}</p>
+          ${modalButtons}
+        </div>
+      </div>
+    </div>
+  `;
+
+  if (item.ingredients || item.instructions) {
+    document.getElementById('modal-container').innerHTML += `
+      <div class="modal fade" id="modal-${cardId}" tabindex="-1" aria-labelledby="modalLabel-${cardId}" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="modalLabel-${cardId}">${item.header}</h5>
+              <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              ${item.ingredients ? `<h6>Ingredients:</h6><p>${item.ingredients}</p>` : ''}
+              ${item.instructions ? `<h6>Instructions:</h6><p>${item.instructions}</p>` : ''}
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    `;
+  }
+}
+
