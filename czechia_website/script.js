@@ -1,8 +1,5 @@
 var currentPage = window.location.pathname.split("/").pop();
-
-function generateNavbar() {
-  var navbar = document.getElementById("navbar");
-  var pages = {
+var pages = {
     "index.html": "Home",
     "history.html": "History",
     "culture.html": "Culture",
@@ -12,6 +9,8 @@ function generateNavbar() {
     "trivia.html": "Trivia"
   };
 
+function generateNavbar() {
+  var navbar = document.getElementById("navbar");
   var navItems = "";
   for (var page in pages) {
     var activeClass = (page === currentPage) ? "active" : "";
