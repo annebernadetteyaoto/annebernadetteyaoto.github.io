@@ -1,0 +1,299 @@
+<html>
+<head>
+<title> Athena Rose - My Works</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<style>
+.icon-bar {
+    width: 100%;
+    height: 70px;
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.info-bar{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.title-bar {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.content-bar{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.font-header {
+    font-family: cursive;
+    font-size: 200%;
+    margin: 0%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.font-subhead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin:0%;
+}
+.font-subhead2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    margin: 0%;
+}
+.font-general {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+.font-title-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+.form {
+    text-align: right;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padding2 {
+    padding-left: 40px;
+}
+.padding3 {
+    padding-top: 0px;
+}
+.note {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+textarea {
+    width: 100%;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.comment {
+    padding-left: 30px;
+    padding-right: 30px
+}
+#text {
+    width:100%;
+    font-size: 12pt;
+}
+.transparent {
+    opacity: 0;
+    margin: 0;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #555;  
+}
+.footer-text {
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.footer-padding {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+.row {
+    color:white;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-icon {
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+</style>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+    document
+        function submit()
+        {
+            document.getElementById('text').value = '';
+            document.getElementById('clear').value = '';
+            alert ("Comment submitted.")
+        }
+</script>
+</head>
+<body>
+    <div class="icon-bar">
+        <div class="img">
+            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+        </div>
+        <div class="info-bar">
+            <a href="home.html">Athena Rose</a>
+        </div>
+    </div>
+    <div class="title-bar">
+        <div class="img">
+            <img src = "flicker.png" alt="book cover" width="150px" height="240px">
+        </div>
+        <div class="content-bar">
+            <b class="font-header">Flicker</b>
+            <b class="font-subhead">by Athena Rose</b>
+            <p class="padding3"></p> 
+            <p class="font-title-content"><b>Status: Complete</b></p>
+            <p class="font-title-content"><b>Last updated: January 20, 2021</b></p>
+            <p class="padding3"></p> 
+            <p class="font-title-content">Content warnings:character death, graphic gore, shipping. Read at your own risk.</p>
+            <p class="font-title-content"><em>Rise and shine, PAW Patrol!</em></p>
+            <p class="font-title-content"><em>Welcome to my humble home, where your life had just gone a different turn.</em>></p>
+            <p class="font-title-content"><em>Let's play a game, shall we?</em></p>
+            <p class="font-title-content">After Ryder's untimely and mysterious death, the PAW Patrol gets kidnapped by a mysterious person. There's only one way to survive: eliminate the other team.</p>
+            <p class="font-title-content">P.S. I don't own Paw Patrol or any of its characters.</p>
+        </div>
+    </div>
+    <hr>
+    <form class="form">
+        <p class="font-title-content">Chapter Index:
+        <select name="list" id="list" accesskey="target">
+            <option value="flicker.html">Prologue</option>
+            <option value="flicker2.html">1|Detective Chase</option>
+            <option value="flicker3.html">2|Introduction</option>
+            <option SELECTED value="flicker4.html">3|Murderer's Plight</option>
+        </select>
+        <input type=button value="Go" onclick="goToNewPage()"/> </p>
+    </form>
+    <hr>
+    <div class="padding">
+        <p class="font-subhead2"><b>3 | Murderer's Plight</b></p>
+        <hr>
+        <p class="font-general"><b><em>Night One</em></b></p>
+        <p class="font-general">After the serious talk in the morning, the team had followed Everest's suggestion made the best of the day. Chase had challenged Zuma on the dance mat and ended up losing to the younger dude. Skye had gone to the kitchen to bake pastries while Rubble cooked for everyone. Rocky, of course, had gone to the library and didn't come out unless he has to eat or go to the bathroom. Marshall taught Tracker and Rex some video games and the three of them played, with Everest joining them halfway through. Tuck and Ella were just content to draw on each other's faces.</p>
+        <p class="font-general">When night came, the voice that everyone had learned to hate spoke out from the speakers.</p>
+        <p class="font-general"><em>"It's midnight, PAW Patrol,"</em> the voice said. <em>"All of you must go back to your rooms. Some of you will be forbidden to go out, while some will have a job to do. Now hustle, before I send the murderer out to kill you all."</em></p>
+        <p class="font-general">Everyone went back to their rooms with fear creeping into their hearts. All of them had one thought in their mind. <em>Who will die tonight?</em></p>
+        <hr>
+        <p class="font-general">"You can't do this to me! You can't make me kill my friends!"</p>
+        <p class="font-general">The mastermind was glad that each room was soundproof or else the others would have heard his loud conversation with the murderer.</p>
+        <p class="font-general">"You have to. Or else, <em>she</em> will suffer."</p>
+        <p class="font-general">A picture of a beautiful woman appeared on the screen of the murderer's tablet and he paled.</p>
+        <p class="font-general">"The poor child would be alone once I kill her mother."</p>
+        <p class="font-general">"Fine, fine. I'll do it. Just... don't kill her. She's my sister's only hope."</p>
+        <p class="font-general">"Excellent. I knew you'd agree to it. Now, here's your first target. Kill her, and I won't touch a hair on your mother's body."</p>
+        <p class="font-general">The screen faded and the murderer sighed. He stood up from his bed and went to wear the mask and hoodie that were provided for him in the closet.</p>
+        <p class="font-general">"I'm sorry, Chase," he whispered as he got the knife from his table and exited the room.</p>
+        <hr>
+        <p class="font-general"><em>Time passes by...</em></p>
+        <p class="font-general"><em>Flick, flick...</em></p>
+        <p class="font-general"><em>Something is... happening...</em></p>
+        <p class="font-general"><em>It's gone silent.</em></p>
+        <p class="font-general"><em>Flick, flick...</em></p>
+        <p class="font-general"><em>10 survivors remain.</em></p>
+        <hr>
+        <div class="note">
+            <p class="font-subhead2">Note:</p>
+            <hr>
+            <div class="padding2">
+                <p class="font-general">This book is based on the Roblox game Flicker.</p>
+            </div>
+            <hr>
+        </div>
+        <hr>
+        <form class="form">
+            <p class="font-title-content">Chapter Index:
+            <select name="list" id="list" accesskey="target">
+                <option value="flicker.html">Prologue</option>
+                <option value="flicker2.html">1|Detective Chase</option>
+                <option value="flicker3.html">2|Introduction</option>
+                <option SELECTED value="flicker4.html">3|Murderer's Plight</option>
+            </select>
+            <input type=button value="Go" onclick="goToNewPage()"/> </p>
+        </form>
+        <hr>
+        <div class="comment">
+           <p class="font-subhead2">Comment:</p>
+            <hr class="transparent">
+            <input type="text" name="guest_name" id="text">
+            <hr class="transparent">
+            <hr class="transparent">
+            <textarea name="comment" rows="10" cols="100" id="clear"></textarea>
+            <div class="form">
+                <input type="submit" value="Submit" onclick="submit()"/>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-padding">
+            <div class="row">
+                <div class="column">
+                    <p class="font-subhead2"><b>Author's Works</b></p>
+                    <p class="font-general"><a href="valo.html">Valorant Oneshots</a></p>
+                    <p class="font-general"><a href="ppatrol.html">Paw Patrol Oneshots</a></p>
+                    <p class="font-general"><a href="bbb.html">BoBoiBoy Oneshots</a></p>
+                    <p class="font-general"><a href="flicker.html">Flicker</a></p>
+                    <p class="font-general"><a href="other.html">Other Pieces</a></p>
+                </div>
+                <div class="column">
+                    <div class="footer-icon">
+                        <div class="img">
+                            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+                        </div>
+                        <div class="info-bar">
+                            <a href="home.html">Athena Rose</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <a href="https://www.instagram.com/princess.glace/"><img src="instagram logo.png" alt="instagram logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.twitch.tv/queenglace"><img src="twitch logo.png" alt="twitch logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.youtube.com/channel/UCowf7f7onma-rTXHcCKvJqw"><img src="youtube logo.png" alt="youtube logo" width="auto" height="50px"></img></a>
+                        <a href="https://twitter.com/queen_glace"><img src="twitter logo.png" alt="twitter logo" width="auto" height="50px"></img></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
