@@ -35,30 +35,27 @@ function generateNavbar() {
     `;
 }
 
-fetch(jsonFile)
-  .then(response => {
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
-    return response.json();
-  })
-  .then(data => {
-    console.log(data); // Log the fetched data to check its structure
-    var sections = data.sections || [];
-    var container = document.getElementById('fullpage');
-    container.innerHTML = ''; // Clear existing content
+function generateSection(page) {
+  var jsonFile = page === 'index.html' ? 'index.json' : 'history.json';
 
-    sections.forEach(section => {
-      container.innerHTML += `
-        <div class='section' style='background-image: url("${section.backgroundImage}");'>
-            <div class='col-7 ps-5 text-white'>
-                <h1>${section.heading}</h1>
-                <p><small>${section.text}</small></p>
-            </div>
-        </div>`;
-    });
-  })
-  .catch(error => console.error('Error loading JSON:', error));
+  fetch(jsonFile)
+    .then(response => response.json())
+    .then(data => {
+      var sections = data.sections || [];
+      var container = document.getElementById('fullpage');
+      
+      sections.forEach(section => {
+        container.innerHTML += `
+          <div class='section' style='background-image: url("${section.backgroundImage}");'>
+              <div class='col-7 ps-5 text-white'>
+                  <h1>${section.heading}</h1>
+                  <p><small>${section.text}</small></p>
+              </div>
+          </div>`;
+      });
+    })
+    .catch(error => console.error('Error loading JSON:', error));
+}
 
 function generateCard(page) {
   var cards = {
