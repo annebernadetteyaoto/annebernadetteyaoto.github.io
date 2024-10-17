@@ -1,0 +1,84 @@
+{
+  "popularDishes": [
+    {
+      "header": "Svíčková",
+      "description": "A creamy sauce made from root vegetables, served with marinated beef and bread dumplings.",
+      "ingredients": "",
+      "instructions": ""
+    },
+    {
+      "header": "dish2",
+      "description": "",
+      "ingredients": "",
+      "instructions": ""
+    },
+    {
+      "header": "dish3",
+      "description": "",
+      "ingredients": "",
+      "instructions": ""
+    }
+  ],
+  "popularDrinks": [
+    {
+      "header": "drink1",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    },
+    {
+      "header": "drink2",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    },
+    {
+      "header": "drink3",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    }
+  ],
+  "traditionalDishes": [
+    {
+      "header": "dish1",
+      "description": "",
+      "ingredients": "",
+      "instructions": ""
+    },
+    {
+      "header": "dish2",
+      "description": "",
+      "ingredients": "",
+      "instructions": ""
+    }
+  ],
+  "traditionalDrinks": [
+    {
+      "header": "drink1",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    },
+    {
+      "header": "drink2",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    }
+  ],
+  "nationalFoodAndDish": [
+    {
+      "header": "dish",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    },
+    {
+      "header": "drink",
+      "description": "",
+      "ingredients": false,
+      "instructions": false
+    }
+  ]
+}
