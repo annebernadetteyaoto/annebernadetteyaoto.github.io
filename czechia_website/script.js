@@ -36,20 +36,14 @@ function generateNavbar() {
 }
 
 function generateSection(page) {
-  var jsonFile = page === 'index.html' ? './index.json' : './history.json';
+  var jsonFile = page === 'index.html' ? 'index.json' : 'history.json';
 
   fetch(jsonFile)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Network response was not ok');
-      }
-      return response.json();
-    })
+    .then(response => response.json())
     .then(data => {
       var sections = data.sections || [];
       var container = document.getElementById('fullpage');
-      container.innerHTML = ''; // Clear existing content
-
+      
       sections.forEach(section => {
         container.innerHTML += `
           <div class='section' style='background-image: url("${section.backgroundImage}");'>
@@ -62,8 +56,6 @@ function generateSection(page) {
     })
     .catch(error => console.error('Error loading JSON:', error));
 }
-
-
 
 function generateCard(page) {
   var cards = {
