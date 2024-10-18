@@ -72,12 +72,12 @@ for (var i = 0; i < headers.length; i++) {
     var container = document.getElementById("container");
     container.innerHTML += `
         <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card my-3 h-100" id="card${i}" onmouseenter="addShadow('card${i}')" onmouseleave="removeShadow('card${i}')">
+            <div class="card my-3 h-100" id="card${i}">
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${headers[i]}</h5>
                     <p class="card-text">${descriptions[i]}</p>
-                    <p class="card-text"><small class="text-muted">Date updated: ${dates[i]}</small></p>
-                    <p class="card-text"><small class="text-muted">Status: ${status[i]}</small></p>
+                    <p class="card-text">Date updated: ${dates[i]}</p>
+                    <p class="card-text">Status: ${status[i]}</p>
                     <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                 </div>
             </div>
