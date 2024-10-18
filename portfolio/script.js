@@ -85,8 +85,8 @@ for (var i = 0; i < headers.length; i++) {
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${headers[i]}</h5>
                     <p class="card-text">${descriptions[i]}</p>
-                    <p class="card-text"><small class="text-muted">Date updated: ${dates[i]}</small></p>
-                    <p class="card-text"><small class="text-muted">Status: ${status[i]}</small></p>
+                    <p class="card-text mt-auto"><small class="text-muted">Date updated: ${dates[i]}</small></p>
+                    <p class="card-text mt-auto"><small class="text-muted">Status: ${status[i]}</small></p>
                     <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                 </div>
             </div>
