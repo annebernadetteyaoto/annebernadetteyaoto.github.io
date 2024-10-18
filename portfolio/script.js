@@ -22,7 +22,7 @@ var headers = [
 ];
 
 var descriptions = [
-    "A bootstrap website created as an activity for Systems Administration and Maintenance."
+    "A bootstrap website created as an activity for Systems Administration and Maintenance.",
     "An error 404 website created as an activity for Applications Development and Emerging Technologies.", 
     "A full-fledged website created as the final requirement for Web Development and Database Administration.",
     "A basic HTML website created as a midterm requirement for Object-Oriented Programming", 
