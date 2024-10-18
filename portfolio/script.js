@@ -49,20 +49,6 @@ var dates = [
     "22 January 2024"
 ];
 
-var status = [
-    "Unfinished",
-    "Finished",
-    "Finished",
-    "To be revised",
-    "To be revised",
-    "To be revised",
-    "To be revised",
-    "To be revised", 
-    "Unfinished",
-    "To be revised",
-    "Finished"
-    ]
-
 var links = [
     "https://annebernadetteyaoto.github.io/sam_activity_02/",
     "https://annebernadetteyaoto.github.io/projects/error_404/",
@@ -86,7 +72,6 @@ for (var i = 0; i < headers.length; i++) {
                     <h5 class="card-title">${headers[i]}</h5>
                     <p class="card-text">${descriptions[i]}</p>
                     <p class="card-text"><small class="text-muted">Date updated: ${dates[i]}</small></p>
-                    <!-- <p class="card-text"><small class="text-muted">Status: ${status[i]}</small></p> -->
                     <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                 </div>
             </div>
