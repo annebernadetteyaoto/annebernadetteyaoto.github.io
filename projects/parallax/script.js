@@ -125,5 +125,3 @@ fetch(apiUrl)
 			}
 		});
 	})
-	
-document.body.onload = fetchAgents();
