@@ -8,6 +8,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 var headers = [
+    "Bootstrap Website",
     "Error 404 Website", 
     "Mentalk", 
     "Object-Oriented Programming Midterm Website", 
@@ -21,6 +22,7 @@ var headers = [
 ];
 
 var descriptions = [
+    "A bootstrap website created as an activity for Systems Administration and Maintenance."
     "An error 404 website created as an activity for Applications Development and Emerging Technologies.", 
     "A full-fledged website created as the final requirement for Web Development and Database Administration.",
     "A basic HTML website created as a midterm requirement for Object-Oriented Programming", 
@@ -34,6 +36,7 @@ var descriptions = [
 ];
 
 var dates = [
+    "19 October 2024",
     "13 July 2024",
     "07 February 2024",
     "Unknown",
@@ -46,7 +49,22 @@ var dates = [
     "22 January 2024"
 ];
 
+var status = [
+    "Unfinished",
+    "Finished",
+    "Finished",
+    "To be revised",
+    "To be revised",
+    "To be revised",
+    "To be revised",
+    "To be revised", 
+    "Unfinished",
+    "To be revised",
+    "Finished"
+    ]
+
 var links = [
+    "https://annebernadetteyaoto.github.io/sam_activity_02/",
     "https://annebernadetteyaoto.github.io/projects/error_404/",
     "https://github.com/itsdamnrj/MENTALK-REPO",
     "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
@@ -67,7 +85,8 @@ for (var i = 0; i < headers.length; i++) {
                 <div class="card-body d-flex flex-column">
                     <h5 class="card-title">${headers[i]}</h5>
                     <p class="card-text">${descriptions[i]}</p>
-                    <p class="card-text"><small class="text-muted">Date finished: ${dates[i]}</small></p>
+                    <p class="card-text"><small class="text-muted">Date updated: ${dates[i]}</small></p>
+                    <p class="card-text"><small class="text-muted">Status: ${status[i]}</small></p>
                     <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                 </div>
             </div>
