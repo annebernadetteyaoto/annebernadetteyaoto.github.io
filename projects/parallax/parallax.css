@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* PARALLAX.CSS */
 /*CSS created by Christopher Jay De Claro*/
 /*github.com/cjdeclaro*/
@@ -89,4 +90,97 @@
 
 #keyart-scrim {
 	opacity: 0;
+=======
+/* PARALLAX.CSS */
+/*CSS created by Christopher Jay De Claro*/
+/*github.com/cjdeclaro*/
+
+/*Key Art default settings*/
+
+.keyart,
+.keyart_layer {
+	height: 1000px;
+}
+
+.keyart {
+	position: relative;
+	z-index: 10;
+}
+
+.keyart_layer {
+	background-position: bottom center;
+	background-size: auto 1038px;
+	background-repeat: repeat-x;
+	width: 100%;
+	position: absolute;
+}
+
+.keyart_layer.parallax {
+	position: fixed;
+}
+
+.main-content {
+	width: 100%;
+	position: absolute;
+	z-index: 200;
+}
+
+/*ADD OR REMOVE LAYERS AS NEEDED*/
+
+#keyart-0 {
+	background-color: #101920;;
+}
+
+#keyart-1 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 10%;
+}
+
+#keyart-2 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 20%;
+}
+
+#keyart-3 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 30%;
+}
+
+#keyart-4 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 40%;
+}
+
+#keyart-5 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 50%;
+}
+
+#keyart-6 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 60%;
+}
+
+#keyart-7 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 70%;
+}
+
+#keyart-8 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 80%;
+}
+
+#keyart-9 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+	opacity: 90%;
+}
+
+#keyart-10 {
+	background-image: url(https://media.valorant-api.com/agents/117ed9e3-49f3-6512-3ccf-0cada7e3823b/fullportrait.png);
+}
+
+#keyart-scrim {
+	opacity: 0;
+>>>>>>> 63e5b89a09a67cadd20b21e7c5667604c1b3cd16
 }
