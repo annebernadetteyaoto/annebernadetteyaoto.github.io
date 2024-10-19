@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Arial';
+      margin: 0;
+    }
+
+    .top-bar {
+      background-color: #101920;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      position: sticky;
+      top: 0;
+      margin-bottom: 30px;
+      z-index: 1000;
+    }
+
+    .top-bar img {
+      margin-right: 10px;
+    }
+
+    h1 {
+      color: white;
+      font-size: 30px;
+      margin: 0px;
+    }
+
+    .footer {
+      background-color: #101920;
+      width: 100%;
+      text-align: center;
+      color: white;
+      margin: auto;
+      height: 50px;
+    }
+
+    .search-bar-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .search-bar {
+      display: flex;
+      margin-right: 10px;
+    }
+
+    .search-bar select,
+    .search-bar input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .agent-container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: space-between;
+      justify-content: center;
+      margin: 0 auto;
+    }
+
+    .agent {
+      border-radius: 20px;
+      box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+      margin: 10px;
+      padding: 20px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .agent .img-container {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      width: 120px;
+      height: 120px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+    }
+
+    .agent .img-container img {
+      max-width: 90%;
+    }
+
+    .agent .abilities {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .agent .ability {
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      justify-content: center;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .agent .ability img {
+      max-width: 75%;
+    }
+
+    .ability:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: rgba(0, 0, 0, 0.8);
+      color: white;
+      padding: 5px;
+      border-radius: 5px;
+      white-space: nowrap;
+    }
+
+    .agent .info {
+      margin-top: 20px;
+    }
+
+    .agent .name {
+      margin: 15px 0 7px;
+    }
+
+    @media (min-width: 600px) {
+      .agent {
+        max-width: 43%;
+      }
+    }
+
+    @media (min-width: 700px) {
+      .agent {
+        max-width: 33%;
+      }
+    }
+
+    @media (min-width: 800px) {
+      .agent,
+      .ability {
+        max-width: 23%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="top-bar">
+    <img src="https://steamuserimages-a.akamaihd.net/ugc/1018321187642401907/3903993440BC9A9EAAEA112162FFB08A0AC47390/"
+      height="50px" width="50px" alt="Valorant logo">
+    <h1>Valorant Agents</h1>
+  </div>
+
+  <div class="search-bar-container">
+    <div class="search-bar">
+      <select id="searchCategory">
+        <option value="any">Any</option>
+        <option value="agents">Agents</option>
+        <option value="abilities">Abilities</option>
+        <option value="role">Role</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Search...">
+    </div>
+  </div>
+
+  <div class="agent-container" id="agent_container"></div>
+
+  <div class="footer">
+    <p>All rights reserved.</p>
+  </div>
+
+  <script>
+    const colors = {
+      initiator: '#DEF3FD',
+      sentinel: '#FCF7DE',
+      duelist: '#FDDFDF',
+      controller: '#CBC3E3',
+    };
+
+    const agent_container = document.getElementById('agent_container');
+    const agent_number = 23;
+    let agentsData;
+
+    const fetchAgents = async () => {
+      const url = `https://valorant-api.com/v1/agents?isPlayableCharacter=true`;
+      const res = await fetch(url);
+      agentsData = await res.json();
+
+      const sortedAgents = agentsData.data.sort((a, b) => {
+        const roleComparison = a.role.displayName.localeCompare(b.role.displayName);
+        if (roleComparison !== 0) {
+          return roleComparison;
+        }
+
+        return a.displayName.localeCompare(b.displayName);
+      });
+
+      sortedAgents.forEach(agent => {
+        createAgentCard(agent);
+      });
+    };
+
+    function createAgentCard(agent) {
+      const agentElement = document.createElement('div');
+      agentElement.classList.add('agent');
+
+      const name = agent.displayName;
+      const desc = agent.description;
+      const role = agent.role.displayName;
+
+      agentElement.style.backgroundColor = colors[agent.role.displayName.toLowerCase()];
+
+      const abilitiesOrder = ['grenade', 'ability1', 'ability2', 'ultimate'];
+      const sortedAbilities = agent.abilities.sort((a, b) => {
+        return abilitiesOrder.indexOf(a.slot.toLowerCase()) - abilitiesOrder.indexOf(b.slot.toLowerCase());
+      });
+
+      const abilitiesWithoutPassive = agent.abilities.filter(ability => ability.slot !== "Passive");
+
+      const abilitiesHTML = abilitiesWithoutPassive.map(ability => `
+        <div class="ability" data-tooltip="${ability.displayName.toUpperCase()}">
+          <img src="${ability.displayIcon}" alt="${ability.displayName.toUpperCase()} icon">
+        </div>
+      `).join('');
+
+      const agentInnerHTML = `
+        <div class="img-container">
+          <img src="${agent.fullPortrait}">
+        </div>
+      
+        <div class="info">
+          <h3 class="name">${name}<br>${role}</h3>
+          <p class="desc">${desc}</p>
+          <h4>Abilities:</h4>
+        </div>
+
+        <div class="abilities">
+          ${abilitiesHTML}
+        </div>
+      `;
+
+      agentElement.innerHTML = agentInnerHTML;
+      agent_container.appendChild(agentElement);
+    }
+
+    const searchInput = document.getElementById('searchInput');
+    const searchCategoryDropdown = document.getElementById('searchCategory'); // Added this line
+
+    searchInput.addEventListener('input', handleSearch);
+    searchCategoryDropdown.addEventListener('change', handleSearch);
+
+    function handleSearch() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const searchCategory = searchCategoryDropdown.value.toLowerCase();
+
+      const filteredAgents = agentsData.data.filter(agent => {
+        switch (searchCategory) {
+          case 'agents':
+            return agent.displayName.toLowerCase().includes(searchTerm);
+          case 'abilities':
+            // Update the check for abilities
+            return agent.abilities.some(ability => ability.displayName.toLowerCase().includes(searchTerm));
+          case 'role':
+            return agent.role.displayName.toLowerCase().includes(searchTerm);
+          default:
+            return (
+              agent.displayName.toLowerCase().includes(searchTerm) ||
+              agent.abilities.some(ability => ability.displayName.toLowerCase().includes(searchTerm)) ||
+              agent.role.displayName.toLowerCase().includes(searchTerm)
+            );
+        }
+      });
+
+      agent_container.innerHTML = '';
+
+      filteredAgents.forEach(agent => {
+        createAgentCard(agent);
+      });
+    }
+
+    fetchAgents();
+  </script>
+</body>
+
+</html>

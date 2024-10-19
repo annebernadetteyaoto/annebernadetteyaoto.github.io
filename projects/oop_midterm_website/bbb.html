@@ -1,0 +1,300 @@
+<html>
+<head>
+<title> Athena Rose - My Works</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<style>
+.icon-bar {
+    width: 100%;
+    height: 70px;
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.info-bar{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.title-bar {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.content-bar{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.font-header {
+    font-family: cursive;
+    font-size: 200%;
+    margin: 0%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.font-subhead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin:0%;
+}
+.font-subhead2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    margin: 0%;
+}
+.font-general {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+.font-title-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+.form {
+    text-align: right;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padding2 {
+    padding-left: 40px;
+}
+.padding3 {
+    padding-top: 0px;
+}
+.note {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+textarea {
+    width: 100%;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.comment {
+    padding-left: 30px;
+    padding-right: 30px
+}
+#text {
+    width:100%;
+    font-size: 12pt;
+}
+.transparent {
+    opacity: 0;
+    margin: 0;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #555;  
+}
+.footer-text {
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.footer-padding {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+.row {
+    color:white;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-icon {
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+</style>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+    document
+        function submit()
+        {
+            document.getElementById('text').value = '';
+            document.getElementById('clear').value = '';
+            alert ("Comment submitted.")
+        }
+</script>
+</head>
+<body>
+    <div class="icon-bar">
+        <div class="img">
+            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+        </div>
+        <div class="info-bar">
+            <a href="home.html">Athena Rose</a>
+        </div>
+    </div>
+    <div class="title-bar">
+        <div class="img">
+            <img src = "bbb.png" alt="book 3 cover" width="150px" height="240px">
+        </div>
+        <div class="content-bar">
+            <b class="font-header">BoBoiBoy Oneshots</b>
+            <b class="font-subhead">by Athena Rose</b>
+            <p class="padding3"></p> 
+            <p class="font-title-content"><b>Status: Complete</b></p>
+            <p class="font-title-content"><b>Last updated: December 12, 2021</b></p>
+            <p class="padding3"></p> 
+            <p class="font-title-content">Content warnings: might include dark or depressing stories</p>
+            <p class="font-title-content">Have you ever thought that BoBoiBoy's elements might not consider themselves as one person? How would they consider themselves then? Friends? Brothers? Who knows?</p>
+            <p class="font-title-content">A oneshot compilation featuring the BoBoiBoy characters. Includes funny, wholesome, and depressing oneshots (and twoshots) so get ready for an emotional roller coaster ride.</p>
+            <p class="font-title-content">P.S. I don't own BoBoiBoy or any of its characters. I only own Atalanta and Void.</p>
+        </div>
+    </div>
+    <hr>
+    <form class="form">
+        <p class="font-title-content">Chapter Index:
+        <select name="list" id="list" accesskey="target">
+            <option SELECTED value="bbb.html">One Hour</option>
+            <option value="bbb2.html">Quis custodiet ipsos custodies?</option>
+            <option value="bbb3.html">The Gift</option>
+            <option value="bbb4.html">Divided Line</option>
+        </select>
+        <input type=button value="Go" onclick="goToNewPage()"/> </p>
+    </form>
+    <hr>
+    <div class="padding">
+        <p class="font-subhead2"><b>One Hour</b></p>
+        <hr>
+        <p class="font-general">Tok Aba was a businessman.</p>
+        <p class="font-general">His shop has gathered so much customers that he was extending the opening of his KoKoTiam.</p>
+        <p class="font-general">He would leave home early and go back late. He doesn't even see his grandson awake anymore, as he was too busy with school and his heroic duties.</p>
+        <p class="font-general">One time, he went home around midnight and found his grandson awake in the living room, seeming like he was waiting for him.</p>
+        <p class="font-general">"BoBoiBoy, why are you still awake at this late hour? You should be asleep by now," he asked.</p>
+        <p class="font-general">"I was waiting for you, Tok Aba, because I want to ask you something," his grandson replied.</p>
+        <p class="font-general">"What would that question be?" he asked curiously, wondering what was so important that he stayed up late to ask.</p>
+        <p class="font-general">"How much is your salary for one hour in the KoKoTiam?"</p>
+        <p class="font-general">Tok Aba got angry. </p>
+        <p class="font-general">"You stayed up late just to ask me that stupid question?! Was it not enough that I leave you money before I go to work?!"</p>
+        <p class="font-general">BoBoiBoy looked terrified and he sighed.</p>
+        <p class="font-general">"Go back to you room, BoBoiBoy. Go to sleep."</p>
+        <p class="font-general">When BoBoiBoy was gone, Tok Aba realized that he acted too harshly. He followed his grandson to his room.</p>
+        <p class="font-general">"BoBoiBoy?"</p>
+        <p class="font-general">"Yes, Tok Aba?"</p>
+        <p class="font-general">"I'm sorry for acting harshly. I was just tired from a long day at work. What were you asking again?" he asked gently.</p>
+        <p class="font-general">"I was asking how much your salary is in one hour."</p>
+        <p class="font-general">"It's five ringgits. May I ask why are you asking me that?"</p>
+        <p class="font-general">BoBoiBoy reached out under his pillow and pulled out 15 ringgits. "May I borrow five more ringgits, Tok Aba?"</p>
+        <p class="font-general">"Why? Don't you have enough money already? Why do you need five more ringgits?"</p>
+        <p class="font-general">BoBoiBoy shook his head. "I just want to spend time with you, Tok Aba. I'm willing to pay for four precious hours of your life just for us to have time together."</p>
+        <p class="font-general">Tok Aba was speechless. Here was his grandson, offering his own savings to him just so he has time for him.</p>
+        <p class="font-general">BoBoiBoy looked away, defeated. "B'but if y-you don't want to, I can just keep this. Your customers would probably look for you." He proceeded to put back his savings under the pillow.</p>
+        <p class="font-general">"Good night, Tok Aba," he mumbled then went to sleep.</p>
+        <p class="font-general">"G-good night, BoBoiBoy," Tok Aba whispered, tears gathering in his eyes. "But you don't need to do that for me. I'm willing to sacrifice a whole day for you, my grandson. You just have to ask."</p>
+        <hr>
+        <div class="note">
+            <p class="font-subhead2">Note:</p>
+            <hr>
+            <div class="padding2">
+                <p class="font-general">Inspired by a Facebook post.</p>
+            </div>
+            <hr>
+        </div>
+        <hr>
+        <form class="form">
+            <p class="font-title-content">Chapter Index:
+            <select name="list" id="list" accesskey="target">
+                <option SELECTED value="bbb.html">One Hour</option>
+                <option value="bbb2.html">Quis custodiet ipsos custodies?</option>
+                <option value="bbb3.html">The Gift</option>
+                <option value="bbb4.html">Divided Line</option>
+            </select>
+            <input type=button value="Go" onclick="goToNewPage()"/> </p>
+        </form>
+        <hr>
+        <div class="comment">
+           <p class="font-subhead2">Comment:</p>
+            <hr class="transparent">
+            <input type="text" name="guest_name" id="text">
+            <hr class="transparent">
+            <hr class="transparent">
+            <textarea name="comment" rows="10" cols="100" id="clear"></textarea>
+            <div class="form">
+                <input type="submit" value="Submit" onclick="submit()"/>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-padding">
+            <div class="row">
+                <div class="column">
+                    <p class="font-subhead2"><b>Author's Works</b></p>
+                    <p class="font-general"><a href="valo.html">Valorant Oneshots</a></p>
+                    <p class="font-general"><a href="ppatrol.html">Paw Patrol Oneshots</a></p>
+                    <p class="font-general"><a href="bbb.html">BoBoiBoy Oneshots</a></p>
+                    <p class="font-general"><a href="flicker.html">Flicker</a></p>
+                    <p class="font-general"><a href="other.html">Other Pieces</a></p>
+                </div>
+                <div class="column">
+                    <div class="footer-icon">
+                        <div class="img">
+                            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+                        </div>
+                        <div class="info-bar">
+                            <a href="home.html">Athena Rose</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <a href="https://www.instagram.com/princess.glace/"><img src="instagram logo.png" alt="instagram logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.twitch.tv/queenglace"><img src="twitch logo.png" alt="twitch logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.youtube.com/channel/UCowf7f7onma-rTXHcCKvJqw"><img src="youtube logo.png" alt="youtube logo" width="auto" height="50px"></img></a>
+                        <a href="https://twitter.com/queen_glace"><img src="twitter logo.png" alt="twitter logo" width="auto" height="50px"></img></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,352 @@
+<html>
+<head>
+<title> Athena Rose - My Works</title>
+<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<style>
+.icon-bar {
+    width: 100%;
+    height: 70px;
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.info-bar{
+    font-family: cursive;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.title-bar {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+.content-bar{
+    font-family: Arial, Helvetica, sans-serif;
+    float: left;
+}
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+.font-header {
+    font-family: cursive;
+    font-size: 200%;
+    margin: 0%;
+    padding-right: 10px;
+    padding-left: 5px;
+}
+.font-subhead{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+    margin:0%;
+}
+.font-subhead2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    margin: 0%;
+}
+.font-general {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 110%;
+}
+.font-title-content {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+.form {
+    text-align: right;
+    margin: 0;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+.padding {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.padding2 {
+    padding-left: 40px;
+}
+.padding3 {
+    padding-top: 0px;
+}
+.note {
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    text-align: left;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+}
+textarea {
+    width: 100%;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.comment {
+    padding-left: 30px;
+    padding-right: 30px
+}
+#text {
+    width:100%;
+    font-size: 12pt;
+}
+.transparent {
+    opacity: 0;
+    margin: 0;
+}
+.footer {
+    width: 100%;
+    height: auto;
+    background-color: #555;  
+}
+.footer-text {
+    font-family: cursive;
+    font-size: 20px;
+    color: white;
+    float: left;
+}
+.footer-padding {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+.column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+.row {
+    color:white;
+}
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.footer-icon {
+    overflow: auto;
+    background-color: #555;  
+    align-items: center;
+    justify-content: left;
+    display: flex;
+}
+</style>
+<script type="text/javascript">
+    function goToNewPage()
+    {
+        var url = document.getElementById('list').value;
+        if(url != 'none') {
+            window.location = url;
+        }
+    }
+    document
+        function submit()
+        {
+            document.getElementById('text').value = '';
+            document.getElementById('clear').value = '';
+            alert ("Comment submitted.")
+        }
+</script>
+</head>
+<body>
+    <div class="icon-bar">
+        <div class="img">
+            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+        </div>
+        <div class="info-bar">
+            <a href="home.html">Athena Rose</a>
+        </div>
+    </div>
+    <div class="title-bar">
+        <div class="img">
+            <img src = "bbb.png" alt="book cover" width="150px" height="240px">
+        </div>
+        <div class="content-bar">
+            <b class="font-header">BoBoiBoy Oneshots</b>
+            <b class="font-subhead">by Athena Rose</b>
+            <p class="padding3"></p> 
+            <p class="font-title-content"><b>Status: Complete</b></p>
+            <p class="font-title-content"><b>Last updated: December 12, 2021</b></p>
+            <p class="padding3"></p> 
+            <p class="font-title-content">Content warnings: might include dark or depressing stories</p>
+            <p class="font-title-content">Have you ever thought that BoBoiBoy's elements might not consider themselves as one person? How would they consider themselves then? Friends? Brothers? Who knows?</p>
+            <p class="font-title-content">A oneshot compilation featuring the BoBoiBoy characters. Includes funny, wholesome, and depressing oneshots (and twoshots) so get ready for an emotional roller coaster ride.</p>
+            <p class="font-title-content">P.S. I don't own BoBoiBoy or any of its characters. I only own Atalanta and Void.</p>
+        </div>
+    </div>
+    <hr>
+    <form class="form">
+        <p class="font-title-content">Chapter Index:
+        <select name="list" id="list" accesskey="target">
+            <option value="bbb.html">One Hour</option>
+            <option SELECTED value="bbb2.html">Quis custodiet ipsos custodies?</option>
+            <option value="bbb3.html">The Gift</option>
+            <option value="bbb4.html">Divided Line</option>
+        </select>
+        <input type=button value="Go" onclick="goToNewPage()"/> </p>
+    </form>
+    <hr>
+    <div class="padding">
+        <p class="font-subhead2"><b>Quis custodiet ipsos custodies?</b></p>
+        <hr>
+        <p class="font-general">"The view here is really nice, isn't it?"</p>
+        <p class="font-general">Fang turned his head to see someone walking towards him. Over the last few years, their rivalry had come to an end and they started to see each other as friends, and eventually, best friends.</p>
+        <p class="font-general">He shook himself out of his reverie and answered BoBoiBoy's question. "Yeah, it really is."</p>
+        <p class="font-general">The dino-capped boy smiled at him as he reached him and turned his attention back to the stars. "The stars twinkle so brightly this near. It's always fascinating to watch them."</p>
+        <p class="font-general">He also pointed the scene below. "Those lights below also seem like stars among the dark shade of the night. I always wished I could touch them and feel the little balls of light floating in my hands."</p>
+        <p class="font-general">BoBoiBoy chuckled. "Don't get me wrong. I can replicate that scene using Solar, but I wanted to touch the real things."</p>
+        <p class="font-general">Fang at his best friend as he babbled on about the different stars, which never failed to remind him of his Solar form.</p>
+        <p class="font-general">"BoBoiBoy, breathe, okay? We have a lot of time to talk about stars," the shadow manipulator said, smiling almost reluctantly.</p>
+        <p class="font-general">BoBoiBoy blushed and bowed his head a little. "Sorry, I got a little too excited."</p>
+        <p class="font-general">Fang shook his head. "Come on, the others are probably waiting for us."</p>
+        <p class="font-general">The shadow manipulator walked towards the door, his plans forgotten for the night.</p>
+        <hr>
+        <p class="font-general">"You know that there's no food here, right?"</p>
+        <p class="font-general">"Yeah," Gopal said distractedly.</p>
+        <p class="font-general">The elemental manipulator just stared at him and he avoided the gaze.</p>
+        <p class="font-general">"So what brings you here, BoBoiBoy?" he asked instead.</p>
+        <p class="font-general">The said person shrugged. "Just admiring the view. Every night, I come to the rooftop and gaze in the sky."</p>
+        <p class="font-general">BoBoiBoy smiled at his longest friend. "It's always fascinating to see how those little balls of light shine so brightly in the dark."</p>
+        <p class="font-general">He gestured on the grounds below. "They look like the sky sometimes, especially when it's really late in the evening. The balls of light cast a glow in the silhouette of the building. It reminds me of some action games where the hero jumps on the buildings at night as he tries to catch the villain."</p>
+        <p class="font-general">"Which reminds me, Gopal. You and I still have a pending game."</p>
+        <p class="font-general">"We do?" Gopal asked in confusion.</p>
+        <p class="font-general">BoBoiBoy grinned. "Yeah. I lost a bet against you, remember?"</p>
+        <p class="font-general">Gopal grinned back at him, truly appreciating the boy who accepted him for all his faults. "Come on. We still have to set the console. I will beat you before curfew."</p>
+        <p class="font-general">The molecule manipulator dragged BoBoiBoy towards his room, his attention diverted for the night.</p>
+        <hr>
+        <p class="font-general">"I see no one bought your cookies again."</p>
+        <p class="font-general">Yaya sniffed and wiped the tears from her eyes. "Yes, and I don't really know why. What's wrong with my cookies?"</p>
+        <p class="font-general">BoBoiBoy scratched his head sheepishly. "I think I know why."</p>
+        <p class="font-general">The gravity manipulator went on her knees. "Tell me, BoBoiBoy, please." On his hesitant look, she added. "I won't get offended, I promise. I just want to improve."</p>
+        <p class="font-general">The dino-capped boy sighed. "Yaya, you must know that no one puts onions in cookies."</p>
+        <p class="font-general">"I-I thought so," Yaya sniffed. "My mom was the one who taught me how to bake them. I loved them so much. It was our own personal recipe. A-and I thought that the others would like them as well."</p>
+        <p class="font-general">"I'm not forcing you to change your recipe, Yaya. You can make an entirely new one while still keeping your old personal recipe. If you want, I can help you bake. My Quake and Cyclone forms are whizzes in the kitchen," BoBoiBoy offered.</p>
+        <p class="font-general">For that first time that night, Yaya smiled genuinely. "Thank you for respecting my wishes, BoBoiBoy. And I might take you up on that offer."</p>
+        <p class="font-general">The elemental manipulator smiled. "The kitchen is currently empty. And curfew is not until a few hours. Unless you're busy, we can go start now. Oh and I wanted some star-shaped ones."</p>
+        <p class="font-general">Yaya shook her head fondly. "You and your stars, BoBoiBoy. You never change."</p>
+        <p class="font-general">They both chuckled at that as they made their way to the kitchen, her troubles solved for the night.</p>
+        <hr>
+        <p class="font-general">"You cold there?"</p>
+        <p class="font-general">Ying whipped her head so fast it almost broke. She was surprised to hear someone as it was way past curfew. It was midnight, so she assumed that everyone was already asleep.</p>
+        <p class="font-general">Her blue eyes found a figure standing by the door, holding out a jacket that she knew too well.</p>
+        <p class="font-general">"Is that the one from your Ice form?" she asked as he went closer to her.</p>
+        <p class="font-general">"Maybe..." he said, smiling as he held it out to her. She accepted it and put in on her, grateful that he was such a thoughtful person.</p>
+        <p class="font-general">"What are you doing here at such a late hour? I thought you only come here before curfew, or at least, that's what I heard from Gopal," she asked curiously.</p>
+        <p class="font-general">BoBoiBoy shrugged. "I woke up in the middle of the night and I couldn't go back to sleep so I went here. This is one of the only place that calms me down, you know? Me sitting down on the rooftop and gazing at the surroundings?"</p>
+        <p class="font-general">Ying let a small smile grace her face. "Yeah, me too. Especially when..."</p>
+        <p class="font-general">"...the others look down on you because of your height and age?" BoBoiBoy asked.</p>
+        <p class="font-general">The time manipulator's smile disappeared and she looked back on the scene below her. "Yeah... that."</p>
+        <p class="font-general">"I don't see them being a disadvantage at all, you know?" the elemental manipulator told her.</p>
+        <p class="font-general">"Really?"</p>
+        <p class="font-general">BoBoiBoy chuckled. "Yeah. I mean, Gopal is the oldest and the tallest among all of us but he's... not quite acting like his age."</p>
+        <p class="font-general">Ying chuckled. "Yeah, I agree."</p>
+        <p class="font-general">As their laughs subsided, silence took the both of them for a few moments.</p>
+        <p class="font-general">"It's so infuriating. Why can't they just see things from MY perspective?!" Ying exclaimed suddenly, standing up.</p>
+        <p class="font-general">BoBoiBoy crouched down so that he was the same height as her. "Hmm... they all seem to be the same for me."</p>
+        <p class="font-general">The time manipulator mock growled. "I'm going to kill you for that, BoBoiBoy!"</p>
+        <p class="font-general">Ying laughed as she chased after him, her troubles vanishing for one night.</p>
+        <hr>
+        <p class="font-general">A lone figure was sitting on the rooftop, his feet dangling on the edge. His eyes were closed and his face was tilted upward, facing the sky.</p>
+        <p class="font-general">The night was freezing, yet he welcomed the coldness that was travelling through his body. It has been a long time since he had felt something other than pain.</p>
+        <p class="font-general">It had been a long week for all of them. TAPOPS was becoming more famous by the second, and their individual fame increases along with it. His name was particularly known in all of the planets. BoBoiBoy, the all-mighty Earth superhero who could conquer anything. The spotlight was on him.</p>
+        <p class="font-general">All of the pressure was driving him to the edge and all he wanted was to get back the normal life that he had on Earth. No power spheres, no aliens getting revenge, no superpowers. Just BoBoiBoy.</p>
+        <p class="font-general">But he knew he couldn't get that. It was too late. Short of erasing his existence in the minds of everyone, there's only one option left. And he couldn't do that, not to his friends. To his family. But he was getting really tired of his life.</p>
+        <p class="font-general">"BoBoiBoy?"</p>
+        <p class="font-general">The said person turned his head towards the door, somehow not surprised to see them at the doorway. He sent smile at their direction as they walked closer to him.</p>
+        <p class="font-general">"What are you doing here so late in the evening?'' he asked them.</p>
+        <p class="font-general">"We could ask you the same thing," Yaya said, sitting down beside him, the others following suit.</p>
+        <p class="font-general">He turned his head back to the sky. "Just stargazing. Nothing to worry about."</p>
+        <p class="font-general">"If stargazing means sitting dangerously close to the edge of the top floor of a building despite the large space, then yes, you are stargazing," Fang deadpanned.</p>
+        <p class="font-general">Ying smacked the spiky-haired boy under the head. "We know you, BoBoiBoy. We have been friends for a long time. What's wrong?" she asked softly.</p>
+        <p class="font-general">BoBoiBoy kept his eyes on the sky. "Nothing."</p>
+        <p class="font-general">Gopal snorted. "If that's true, I'll eat the Admiral."</p>
+        <p class="font-general">Yaya rolled her eyes and looked at her friend in concern. "Seriously, BoBoiBoy. What-"</p>
+        <p class="font-general">"Nothing is wrong," the elemental manipulator said more forcefully. "I'm fine."</p>
+        <p class="font-general">BoBoiBoy looked on the scene below him. The lights on the buildings shine so brightly against the darkness of the night. He felt his throat close up. He badly wanted to reach out and touch them. Just a few more inches.</p>
+        <p class="font-general">"I'm fine," BoBoiBoy whispered. "The stars are bright tonight. It's so beautiful."</p>
+        <p class="font-general">"There are other stars that you can reach, BoBoiBoy. And it doesn't involve jumping down from the rooftop of a 50-storey building," Fang said.</p>
+        <p class="font-general">BoBoiBoy turned his face towards them, his eyes brimming with tears. Yaya opened her arms and held on to the sobbing boy. For a long time, he had saved the world. Now, it was time for them to save him.</p>
+        <hr>
+        <div class="note">
+            <p class="font-subhead2">Note:</p>
+            <hr>
+            <div class="padding2">
+                <p class="font-general">Title is in Latin. It means, "Who will guard the guards themselves?"</p>
+            </div>
+            <hr>
+        </div>
+        <hr>
+        <form class="form">
+            <p class="font-title-content">Chapter Index:
+            <select name="list" id="list" accesskey="target">
+                <option value="bbb.html">One Hour</option>
+                <option SELECTED value="bbb2.html">Quis custodiet ipsos custodies?</option>
+                <option value="bbb3.html">The Gift</option>
+                <option value="bbb4.html">Divided Line</option>
+            </select>
+            <input type=button value="Go" onclick="goToNewPage()"/> </p>
+        </form>
+        <hr>
+        <div class="comment">
+           <p class="font-subhead2">Comment:</p>
+            <hr class="transparent">
+            <input type="text" name="guest_name" id="text">
+            <hr class="transparent">
+            <hr class="transparent">
+            <textarea name="comment" rows="10" cols="100" id="clear"></textarea>
+            <div class="form">
+                <input type="submit" value="Submit" onclick="submit()"/>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-padding">
+            <div class="row">
+                <div class="column">
+                    <p class="font-subhead2"><b>Author's Works</b></p>
+                    <p class="font-general"><a href="valo.html">Valorant Oneshots</a></p>
+                    <p class="font-general"><a href="ppatrol.html">Paw Patrol Oneshots</a></p>
+                    <p class="font-general"><a href="bbb.html">BoBoiBoy Oneshots</a></p>
+                    <p class="font-general"><a href="flicker.html">Flicker</a></p>
+                    <p class="font-general"><a href="other.html">Other Pieces</a></p>
+                </div>
+                <div class="column">
+                    <div class="footer-icon">
+                        <div class="img">
+                            <a href="home.html"><img src="cypher chibi.png" alt="cypher icon" width="50px" height="50px"></img></a>
+                        </div>
+                        <div class="info-bar">
+                            <a href="home.html">Athena Rose</a>
+                        </div>
+                    </div>
+                    <div class="img">
+                        <a href="https://www.instagram.com/princess.glace/"><img src="instagram logo.png" alt="instagram logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.twitch.tv/queenglace"><img src="twitch logo.png" alt="twitch logo" width="auto" height="50px"></img></a>
+                        <a href="https://www.youtube.com/channel/UCowf7f7onma-rTXHcCKvJqw"><img src="youtube logo.png" alt="youtube logo" width="auto" height="50px"></img></a>
+                        <a href="https://twitter.com/queen_glace"><img src="twitter logo.png" alt="twitter logo" width="auto" height="50px"></img></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
