@@ -55,7 +55,7 @@ var status = [
     ]
 
 var links = [
-    "https://annebernadetteyaoto.github.io/sam_activity_02/",
+    "https://annebernadetteyaoto.github.io/sam_act_02/",
     "https://annebernadetteyaoto.github.io/projects/error_404/",
     "https://github.com/itsdamnrj/MENTALK-REPO",
     "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
