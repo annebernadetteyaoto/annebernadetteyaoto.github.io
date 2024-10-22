@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 {
     "landmarks": [
       {
@@ -47,54 +46,4 @@
       }
     ]
   }
-=======
-{
-    "landmarks": [
-      {
-        "header": "",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      }
-    ],
-    "naturalSites": [
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      }
-    ],
-    "UNESCO": [
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      },
-      {
-        "header": "name",
-        "description": ""
-      }
-    ]
-  }
->>>>>>> 63e5b89a09a67cadd20b21e7c5667604c1b3cd16
   
