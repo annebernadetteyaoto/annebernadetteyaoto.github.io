@@ -12,9 +12,14 @@ footer {
     width: 100%;
 }
 
-.cardimg {
+.imgcontainer {
     width: 100%;
     max-height: 100px;
+}
+
+.cardimg {
+    width: 100%;
+    height: auto;
     overflow: hidden;
     object-position: center;
 }
