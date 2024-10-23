@@ -6,7 +6,8 @@
             "date": "19 October 2024",
             "type": "SAM Activity",
             "stage": "Unfinished",
-            "link": "https://annebernadetteyaoto.github.io/sam_act_02/"
+            "link": "https://annebernadetteyaoto.github.io/projects/sam_act_02/",
+            "image": "images/prague.png"
         },
         {
             "header": "Error 404 Website",
@@ -14,7 +15,8 @@
             "date": "13 July 2024",
             "type": "ADET Activity",
             "stage": "Finished",
-            "link": "https://annebernadetteyaoto.github.io/projects/error_404/"
+            "link": "https://annebernadetteyaoto.github.io/projects/error_404/",
+            "image": "images/error404.png"
         },
         {
             "header": "Mentalk",
@@ -22,7 +24,8 @@
             "date": "07 February 2024",
             "type": "WD and DA Finals",
             "stage": "Finished",
-            "link": "https://github.com/itsdamnrj/MENTALK-REPO"
+            "link": "https://github.com/itsdamnrj/MENTALK-REPO",
+            "image": "images/mentalk.png"
         },
         {
             "header": "Personal Website",
@@ -30,7 +33,8 @@
             "date": "Unknown",
             "type": "OOP Midterms",
             "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/"
+            "link": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
+            "image": "images/personal.png"
         },
         {
             "header": "Parallax",
@@ -38,7 +42,8 @@
             "date": "13 July 2024",
             "type": "ADET Activity",
             "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/parallax/"
+            "link": "https://annebernadetteyaoto.github.io/projects/parallax/",
+            "image": "images/parallax.png"
         },
         {
             "header": "PUP Website",
@@ -46,7 +51,8 @@
             "date": "Unknown",
             "type": "HCI Activity",
             "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/pup_website/"
+            "link": "https://annebernadetteyaoto.github.io/projects/pup_website/",
+            "image": "images/pup.png"
         },
         {
             "header": "The Coffee Bud",
@@ -54,7 +60,8 @@
             "date": "26 November 2023",
             "type": "WD Activity",
             "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/"
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/",
+            "image": "images/tcb.png"
         },
         {
             "header": "The Coffee Bud (Starbucks)",
@@ -62,7 +69,8 @@
             "date": "13 December 2023",
             "type": "WD Activity",
             "stage": "Unfinished",
-            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/"
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/",
+            "image": "images/tcbsb.png"
         },
         {
             "header": "The Searcher Website",
@@ -70,7 +78,8 @@
             "date": "26 June 2024",
             "type": "SAD Finals",
             "stage": "Unfinished",
-            "link": "#"
+            "link": "#",
+            "image": "images/searcher.png"
         },
         {
             "header": "UnlockIT",
@@ -78,7 +87,8 @@
             "date": "Unknown",
             "type": "OOP and IM Finals",
             "stage": "To be revised",
-            "link": "#"
+            "link": "#",
+            "image": "images/unlockit.png"
         },
         {
             "header": "Valorant API",
@@ -86,7 +96,8 @@
             "date": "22 January 2024",
             "type": "WD Activity",
             "stage": "Finished",
-            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api/"
+            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api/",
+            "image": "images/valorant.png"
         }
     ]
 }

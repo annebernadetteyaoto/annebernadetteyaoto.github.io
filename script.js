@@ -1,10 +1,8 @@
-// Fetch the JSON data
 fetch('data.json')
     .then(response => response.json())
     .then(data => {
         const projects = data.projects;
 
-        // Function to get badge class based on feature type
         function getBadgeClass(feature) {
             switch (feature.toLowerCase()) {
                 case 'html':
@@ -26,13 +24,11 @@ fetch('data.json')
             }
         }
 
-        // Generate cards based on fetched data
         projects.forEach((project, i) => {
             const container = document.getElementById("container");
             const badgeClass = project.stage.toLowerCase() === "finished" ? "success" : 
                 project.stage.toLowerCase() === "unfinished" ? "danger" : "warning";
 
-            // Generate feature badges
             const badges = project.features.map(feature => {
                 const className = getBadgeClass(feature.trim());
                 return `<span class="badge rounded-pill ${className} me-1">${feature.trim()}</span>`;
@@ -41,6 +37,9 @@ fetch('data.json')
             container.innerHTML += `
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card my-3 h-100">
+                        <div class="imgcontainer">
+                            <img src="${project.image}">
+                        </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${project.header}</h5>
                             <div class="mt-2">${badges}</div>
