@@ -11,17 +11,3 @@ footer {
     bottom: 0;
     width: 100%;
 }
-
-.imgcontainer {
-    position: relative;
-    width: 100%;
-    max-height: 100px;
-    overflow: hidden;
-}
-
-.imgcontainer img {
-    width: 100%; 
-    height: auto;
-    object-fit: cover;
-    object-position: center;
-}
