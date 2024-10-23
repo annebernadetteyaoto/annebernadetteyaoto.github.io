@@ -79,17 +79,17 @@ for (var i = 0; i < headers.length; i++) {
         badgeClass = "warning";
     }
 
-    container.insertAdjacentHTML('beforeend', `
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3">
-            <div class="card my-3 h-100" id="card${i}">
-                <div class="card-body d-flex flex-column">
-                    <h5 class="card-title">${headers[i]}</h5>
-                    <p class="card-text">${descriptions[i]}</p>
-                    <p class="card-text">Date updated: ${dates[i]}</p>
-                    <span class="badge rounded-pill text-bg-${badgeClass}">${stage[i]}</span>
-                    <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
-                </div>
+    container.innerHTML += `
+    <div class="col-12 col-md-6 col-lg-4 col-xl-3">
+        <div class="card my-3 h-100">
+            <div class="card-body d-flex flex-column">
+                <h5 class="card-title">` + headers[i] + `</h5>
+                <p class="card-text">` + descriptions[i] + `</p>
+                <p class="card-text">Date updated: ` + dates[i] + `</p>
+                <span class="badge rounded-pill" style="background-color:` + badgeClass + `">` + stage[i] + `</span>
+                <a href="` + links[i] + `" class="btn btn-primary mt-auto" target="_blank">View Project</a>
             </div>
         </div>
-    `);
+    </div>
+`;
 }
