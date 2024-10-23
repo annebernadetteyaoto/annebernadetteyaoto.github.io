@@ -1,0 +1,92 @@
+{
+    "projects": [
+        {
+            "header": "Bootstrap Website",
+            "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+            "date": "19 October 2024",
+            "type": "SAM Activity",
+            "stage": "Unfinished",
+            "link": "https://annebernadetteyaoto.github.io/sam_act_02/"
+        },
+        {
+            "header": "Error 404 Website",
+            "features": ["HTML", "CSS", "JavaScript"],
+            "date": "13 July 2024",
+            "type": "ADET Activity",
+            "stage": "Finished",
+            "link": "https://annebernadetteyaoto.github.io/projects/error_404/"
+        },
+        {
+            "header": "Mentalk",
+            "features": ["HTML", "CSS", "JavaScript", "PHP", "Responsive"],
+            "date": "07 February 2024",
+            "type": "WD and DA Finals",
+            "stage": "Finished",
+            "link": "https://github.com/itsdamnrj/MENTALK-REPO"
+        },
+        {
+            "header": "Personal Website",
+            "features": ["HTML"],
+            "date": "Unknown",
+            "type": "OOP Midterms",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/"
+        },
+        {
+            "header": "Parallax",
+            "features": ["HTML", "CSS", "JavaScript"],
+            "date": "13 July 2024",
+            "type": "ADET Activity",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/parallax/"
+        },
+        {
+            "header": "PUP Website",
+            "features": ["HTML"],
+            "date": "Unknown",
+            "type": "HCI Activity",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/pup_website/"
+        },
+        {
+            "header": "The Coffee Bud",
+            "features": ["HTML", "CSS", "JavaScript"],
+            "date": "26 November 2023",
+            "type": "WD Activity",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/"
+        },
+        {
+            "header": "The Coffee Bud (Starbucks)",
+            "features": ["HTML", "CSS", "JavaScript", "Responsive"],
+            "date": "13 December 2023",
+            "type": "WD Activity",
+            "stage": "Unfinished",
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/"
+        },
+        {
+            "header": "The Searcher Website",
+            "features": ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap", "Responsive"],
+            "date": "26 June 2024",
+            "type": "SAD Finals",
+            "stage": "Unfinished",
+            "link": "#"
+        },
+        {
+            "header": "UnlockIT",
+            "features": ["HTML", "CSS", "JavaScript", "PHP"],
+            "date": "Unknown",
+            "type": "OOP and IM Finals",
+            "stage": "To be revised",
+            "link": "#"
+        },
+        {
+            "header": "Valorant API",
+            "features": ["HTML", "CSS", "JavaScript", "API"],
+            "date": "22 January 2024",
+            "type": "WD Activity",
+            "stage": "Finished",
+            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api/"
+        }
+    ]
+}
