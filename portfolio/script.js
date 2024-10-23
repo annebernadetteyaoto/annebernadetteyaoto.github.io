@@ -72,11 +72,11 @@ for (var i = 0; i < headers.length; i++) {
     var container = document.getElementById("container");
     var badgeClass = "";
     if (stage[i] === "Finished") {
-        badgeClass = "success";
+        badgeClass = "green";
     } else if (stage[i] === "Unfinished") {
-        badgeClass = "danger";
+        badgeClass = "red";
     } else if (stage[i] === "To be revised") {
-        badgeClass = "warning";
+        badgeClass = "yellow";
     }
 
     container.innerHTML += `
