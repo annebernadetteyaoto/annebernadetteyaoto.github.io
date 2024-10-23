@@ -25,3 +25,10 @@ footer {
     object-fit: cover;
     object-position: center;
 }
+
+#profile {
+    overflow: hidden;
+    width: 115%;
+    height: auto;
+    object-position: bottom;
+}
