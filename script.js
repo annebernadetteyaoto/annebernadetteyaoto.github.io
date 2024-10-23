@@ -37,7 +37,7 @@ fetch('data.json')
             container.innerHTML += `
                 <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                     <div class="card my-3 h-100">
-                        <img src="${project.image}" class="card-img-top" alt="${project.header} image">
+                        <img src="${project.image}" class="cardimg card-img-top" alt="${project.header} image">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">${project.header}</h5>
                             <div class="mt-2">${badges}</div>
