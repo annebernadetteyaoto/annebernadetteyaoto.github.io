@@ -86,7 +86,7 @@ for (var i = 0; i < headers.length; i++) {
                     <h5 class="card-title">${headers[i]}</h5>
                     <p class="card-text">${descriptions[i]}</p>
                     <p class="card-text">Date updated: ${dates[i]}</p>
-                    <span class="badge rounded-pill text-bg-${badgeClass}">${stage[i]}</span>
+                    <span class="badge rounded-pill text-bg-${badgeClass} justify-self-start">${stage[i]}</span>
                     <a href="${links[i]}" class="btn btn-primary mt-auto" target="_blank">View Project</a>
                 </div>
             </div>
