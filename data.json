@@ -98,6 +98,15 @@
             "stage": "Finished",
             "link": "https://annebernadetteyaoto.github.io/projects/valorant_api/",
             "image": "images/valorant.png"
+        },
+        {
+            "header": "Valorant API v2",
+            "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+            "date": "16 November 2024",
+            "type": "SAM Activity",
+            "stage": "Finished",
+            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api_v2/",
+            "image": "images/valorant.png"
         }
     ]
 }
