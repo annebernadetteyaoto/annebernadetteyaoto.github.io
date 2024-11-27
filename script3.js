@@ -16,7 +16,7 @@ function generateNavbar() {
         navItems += `<li class="nav-item"><a class="nav-link ${activeClass}" href="${page}">${pages[page]}</a></li>`;
     }
 
-    var navClass = (currentPage === "index2.html") ? "navbar-fixed" : "navbar-sticky";
+    var navClass = (currentPage === "index.html") ? "navbar-fixed" : "navbar-sticky";
 
     navbar.innerHTML = `
       <nav class="navbar bg-dark navbar-expand-lg ${navClass} opacity-75" data-bs-theme="dark">
