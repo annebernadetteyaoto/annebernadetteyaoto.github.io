@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles2.css">
+</head>
+
+<body>
+    <div class="navbar" id="navbar"></div>
+
+    <div class="container-fluid py-4 px-5 bg-secondary text-dark">
+        <h2 class="section-title">Personal Details</h2>
+        <p><strong>Birthday:</strong> 8 August 2003</p>
+        <p><strong>Age:</strong> <span id="age"></span></p>
+        <p><strong>Country:</strong> Philippines 🇵🇭</p>
+        <p><strong>Education:</strong> 4th year BSIT student at PUP - Sto. Tomas</p>
+    </div>
+
+    <div class="container-fluid py-4 px-5">
+        <h2 class="section-title">Likes</h2>
+        <ul>
+            <li>Coffee</li>
+            <li>Gaming</li>
+            <li>Music</li>
+            <li>Stories</li>
+            <li>Nature</li>
+        </ul>
+    </div>
+
+    <div class="container-fluid py-4 px-5 bg-secondary text-dark">
+        <h2 class="section-title">Hobbies</h2>
+        <ul>
+            <li>Gaming</li>
+            <li>Listening to music, singing</li>
+            <li>Reading and writing stories</li>
+            <li>Worldbuilding</li>
+            <li>Random sketching</li>
+        </ul>
+    </div>
+
+    <div class="container-fluid py-4 px-5">
+        <h2 class="section-title">Affiliations</h2>
+        <ul>
+            <li><b>Department of Science and Technology</b> - Scholar (2021 - present)</li>
+            <li><b>Google Developers Student Club</b> - Member (2023 - 2024)</li>
+            <li><b>Data Camp</b> - Scholar (March 2024 - November 2024)</li>
+            <li><b>Department of Science and Technology Regional Patriots Council Region 4-A</b> - Education and Research Committee Member (2024 - present)</li>
+            <li><b>Iskonnovators Student Community</b> - Core Team Member: Backend Developer (2024 - present)</li>
+        </ul>
+    </div>
+
+    <div class="container-fluid py-4 px-5 bg-secondary text-dark">
+        <h2 class="section-title">Personal Playlist</h2>
+        <iframe style="border-radius:12px"
+            src="https://open.spotify.com/embed/playlist/3pNGEeD55nTW02ngyesj02?utm_source=generator" width="100%"
+            height="352" frameBorder="0" allowfullscreen=""
+            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    </div>
+    </div>
+
+    <script src="script3.js"></script>
+    <script>
+        generateNavbar();
+        function calculateAge(birthday) {
+            var today = new Date();
+            var birthDate = new Date(birthday);
+            var age = today.getFullYear() - birthDate.getFullYear();
+            var monthDiff = today.getMonth() - birthDate.getMonth();
+            if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < birthDate.getDate())) {
+                age--;
+            }
+            return age;
+        }
+        document.getElementById("age").textContent = calculateAge('2003-08-08');
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

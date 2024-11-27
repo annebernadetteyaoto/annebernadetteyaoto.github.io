@@ -16,15 +16,17 @@ function generateNavbar() {
         navItems += `<li class="nav-item"><a class="nav-link ${activeClass}" href="${page}">${pages[page]}</a></li>`;
     }
 
+    var navClass = (currentPage === "index2.html") ? "navbar-fixed" : "navbar-sticky";
+
     navbar.innerHTML = `
-      <nav class="navbar bg-dark navbar-expand-lg opacity-75" data-bs-theme="dark">
+      <nav class="navbar bg-dark navbar-expand-lg ${navClass} opacity-75" data-bs-theme="dark">
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="nav nav-underline m-auto mb-2 mb-lg-0">
+            <ul class="nav nav-underline p-2 m-auto mb-2 mb-lg-0">
               ${navItems}
             </ul>
           </div>
@@ -46,7 +48,7 @@ function generateSection(page) {
                 'subheading': 'Personal Details',
                 'text': {
                     'Birthdate': '8 August 2003',
-                    'Age': new Date().getFullYear() - 2003, // Dynamic age calculation
+                    'Age': new Date().getFullYear() - 2003, 
                     'Gender': 'Female',
                     'Country': 'Philippines 🇵🇭',
                     'Dducation': '4th year Bachelor of Science in Information Technology student from PUP - Sto. Tomas'
@@ -101,12 +103,11 @@ function generateSection(page) {
 
     var section = sections[page] || [];
     var container = document.getElementById('fullpage');
-    container.innerHTML = ""; // Clear previous content
+    container.innerHTML = "";
 
     section.forEach((sec, index) => {
         var content = "";
 
-        // Handle the profile section (index === 0)
         if (index === 0 && sec.profileImage) {
             content += `
                 <div class="text-center py-5">
@@ -115,7 +116,6 @@ function generateSection(page) {
                     <p class="lead">${sec.subheading}</p>
                 </div>`;
         } else if (sec.projects) {
-            // Handle the projects section
             content += `<div class="row row-cols-1 row-cols-md-3 g-4">`;
             sec.projects.forEach(project => {
                 content += `
@@ -134,18 +134,15 @@ function generateSection(page) {
             });
             content += `</div>`;
         } else if (sec.text) {
-            // Handle the text content for About Me and Skills sections
             for (var key in sec.text) {
                 content += `<p><strong>${key}:</strong> ${sec.text[key]}</p>`;
             }
         } else if (sec.contactInfo) {
-            // Handle the contact info section
             for (var key in sec.contactInfo) {
                 content += `<p><strong>${key}:</strong> <a href="${key === 'email' ? 'mailto:' + sec.contactInfo[key] : sec.contactInfo[key]}" target="_blank">${sec.contactInfo[key]}</a></p>`;
             }
         }
 
-        // Add content to container
         container.innerHTML += `
           <div class="section py-5">
             <div class="container text-white">
