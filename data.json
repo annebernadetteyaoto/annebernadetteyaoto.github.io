@@ -1,40 +1,22 @@
 {
     "projects": [
         {
-            "header": "Bootstrap Website",
+            "header": "Valorant API v2",
+            "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+            "date": "16 November 2024",
+            "type": "SAM Activity",
+            "stage": "Finished",
+            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api_v2/",
+            "image": "images/valorant.png"
+        },
+        {
+            "header": "Place Website",
             "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
             "date": "19 October 2024",
             "type": "SAM Activity",
             "stage": "Unfinished",
             "link": "https://annebernadetteyaoto.github.io/projects/sam_act_02/",
             "image": "images/prague.png"
-        },
-        {
-            "header": "Error 404 Website",
-            "features": ["HTML", "CSS", "JavaScript"],
-            "date": "13 July 2024",
-            "type": "ADET Activity",
-            "stage": "Finished",
-            "link": "https://annebernadetteyaoto.github.io/projects/error_404/",
-            "image": "images/error404.png"
-        },
-        {
-            "header": "Mentalk",
-            "features": ["HTML", "CSS", "JavaScript", "PHP", "Responsive"],
-            "date": "07 February 2024",
-            "type": "WD and DA Finals",
-            "stage": "Finished",
-            "link": "https://github.com/itsdamnrj/MENTALK-REPO",
-            "image": "images/mentalk.png"
-        },
-        {
-            "header": "Personal Website",
-            "features": ["HTML"],
-            "date": "Unknown",
-            "type": "OOP Midterms",
-            "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
-            "image": "images/personal.png"
         },
         {
             "header": "Parallax",
@@ -46,31 +28,13 @@
             "image": "images/parallax.png"
         },
         {
-            "header": "PUP Website",
-            "features": ["HTML"],
-            "date": "Unknown",
-            "type": "HCI Activity",
-            "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/pup_website/",
-            "image": "images/pup.png"
-        },
-        {
-            "header": "The Coffee Bud",
+            "header": "Error 404 Website",
             "features": ["HTML", "CSS", "JavaScript"],
-            "date": "26 November 2023",
-            "type": "WD Activity",
-            "stage": "To be revised",
-            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/",
-            "image": "images/tcb.png"
-        },
-        {
-            "header": "The Coffee Bud (Starbucks)",
-            "features": ["HTML", "CSS", "JavaScript", "Responsive"],
-            "date": "13 December 2023",
-            "type": "WD Activity",
-            "stage": "Unfinished",
-            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/",
-            "image": "images/tcbsb.png"
+            "date": "13 July 2024",
+            "type": "ADET Activity",
+            "stage": "Finished",
+            "link": "https://annebernadetteyaoto.github.io/projects/error_404/",
+            "image": "images/error404.png"
         },
         {
             "header": "The Searcher Website",
@@ -82,13 +46,13 @@
             "image": "images/searcher.png"
         },
         {
-            "header": "UnlockIT",
-            "features": ["HTML", "CSS", "JavaScript", "PHP"],
-            "date": "Unknown",
-            "type": "OOP and IM Finals",
-            "stage": "To be revised",
-            "link": "#",
-            "image": "images/unlockit.png"
+            "header": "Mentalk",
+            "features": ["HTML", "CSS", "JavaScript", "PHP", "Responsive"],
+            "date": "07 February 2024",
+            "type": "WD and DA Finals",
+            "stage": "Finished",
+            "link": "https://github.com/itsdamnrj/MENTALK-REPO",
+            "image": "images/mentalk.png"
         },
         {
             "header": "Valorant API",
@@ -100,13 +64,49 @@
             "image": "images/valorant.png"
         },
         {
-            "header": "Valorant API v2",
-            "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
-            "date": "16 November 2024",
-            "type": "SAM Activity",
-            "stage": "Finished",
-            "link": "https://annebernadetteyaoto.github.io/projects/valorant_api_v2/",
-            "image": "images/valorant.png"
-        }
+            "header": "The Coffee Bud (Starbucks)",
+            "features": ["HTML", "CSS", "JavaScript", "Responsive"],
+            "date": "13 December 2023",
+            "type": "WD Activity",
+            "stage": "Unfinished",
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/",
+            "image": "images/tcbsb.png"
+        },
+        {
+            "header": "The Coffee Bud",
+            "features": ["HTML", "CSS", "JavaScript"],
+            "date": "26 November 2023",
+            "type": "WD Activity",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/",
+            "image": "images/tcb.png"
+        },
+        {
+            "header": "Personal Website",
+            "features": ["HTML"],
+            "date": "Unknown",
+            "type": "OOP Midterms",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
+            "image": "images/personal.png"
+        },
+        {
+            "header": "PUP Website",
+            "features": ["HTML"],
+            "date": "Unknown",
+            "type": "HCI Activity",
+            "stage": "To be revised",
+            "link": "https://annebernadetteyaoto.github.io/projects/pup_website/",
+            "image": "images/pup.png"
+        },
+        {
+            "header": "UnlockIT",
+            "features": ["HTML", "CSS", "JavaScript", "PHP"],
+            "date": "Unknown",
+            "type": "OOP and IM Finals",
+            "stage": "To be revised",
+            "link": "#",
+            "image": "images/unlockit.png"
+        }     
     ]
 }
