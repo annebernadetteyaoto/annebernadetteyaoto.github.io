@@ -1,0 +1,4 @@
+index2.html = new index.html, testing
+script3.js = references index2.html
+
+*if index2 becomes main index, make sure to change index2 in script3.js
