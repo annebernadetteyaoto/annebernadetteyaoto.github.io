@@ -3,7 +3,7 @@ var currentPage = window.location.pathname.split("/").pop();
 function generateNavbar() {
     var navbar = document.getElementById("navbar");
     var pages = {
-        "index2.html": "Home",
+        "index.html": "Home",
         "about.html": "About Me",
         "skills.html": "Skills",
         "projects.html": "Projects",
@@ -37,7 +37,7 @@ function generateNavbar() {
 
 function generateSection(page) {
     var sections = {
-        "index2.html": [
+        "index.html": [
             {
                 'heading': 'Anne Bernadette D. Yaoto',
                 'subheading': 'Student | Web Developer | Programmer | Aspiring Game Developer',
