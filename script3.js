@@ -5,6 +5,7 @@ function generateNavbar() {
     var pages = {
         "index.html": "Home",
         "about.html": "About Me",
+        "videos.html": "Videos",
         "skills.html": "Skills",
         "projects.html": "Projects",
         "contact.html": "Contact"
