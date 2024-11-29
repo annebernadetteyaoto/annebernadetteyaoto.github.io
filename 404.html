@@ -80,11 +80,6 @@
         <h1>404: Page Not Found</h1>
         <p>Looks like you're lost in the vast expanse of the internet. The page you're looking for has drifted off into the unknown.</p>
         <button id="redirect-button">Help Me Find My Way</button>
-        <div class="links">
-            <a href="#">Home</a>
-            <a href="#">About Us</a>
-            <a href="#">Contact</a>
-        </div>
     </div>
     <script>
         document.getElementById('redirect-button').addEventListener('click', () => {
@@ -102,19 +97,6 @@
             spaceship.style.transform = 'translate(-50%, -50%)';
             spaceship.style.transition = 'top 1s, left 1s';
             document.body.appendChild(spaceship);
-
-            setTimeout(() => {
-                spaceship.style.top = '80%';
-                spaceship.style.left = '10%';
-                const message = document.createElement('div');
-                message.innerText = "Let's get you back to safety!";
-                message.style.position = 'absolute';
-                message.style.top = '85%';
-                message.style.left = '10%';
-                message.style.color = 'white';
-                message.style.fontSize = '1.5em';
-                document.body.appendChild(message);
-            }, 1000);
         });
     </script>
 </body>
