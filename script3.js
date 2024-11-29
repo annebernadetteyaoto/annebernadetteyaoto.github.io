@@ -71,19 +71,22 @@ function generateSection(page) {
                 'subheading': 'Finished and Ongoing Projects',
                 'projects': [
                     {
-                        'name': 'JUANGPT',
-                        'description': 'Conversational AI for accessing demographic data.',
-                        'link': 'projects/juangpt.html'
+                        'name': 'Valorant API v2',
+                        'type': 'SAM Activity',
+                        'image': 'images/valorant.png',
+                        'link': 'projects/valorant_api_v2/index.html'
                     },
                     {
-                        'name': 'Study Game',
-                        'description': 'Web-based educational game with multiple-choice questions.',
-                        'link': 'projects/study-game.html'
+                        'name': 'Place Website',
+                        'type': 'SAM Activity',
+                        'image': 'images/prague.png',
+                        'link': 'projects/sam_act_02/index.html'
                     },
                     {
-                        'name': 'Portfolio Website',
-                        'description': 'Personal website showcasing skills and projects.',
-                        'link': 'projects/portfolio.html'
+                        'name': 'Parallax',
+                        'type': 'ADET Activity',
+                        'image': 'images/parallax.png',
+                        'link': 'projects/parallax/index.html'
                     }
                 ],
                 'link': 'projects.html'
