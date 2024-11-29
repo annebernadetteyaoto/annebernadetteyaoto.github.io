@@ -85,19 +85,6 @@
         document.getElementById('redirect-button').addEventListener('click', () => {
             window.location.href = 'index.html';
         });
-
-        document.querySelector('.astronaut').addEventListener('mouseover', () => {
-            const spaceship = document.createElement('img');
-            spaceship.src = 'https://raw.githubusercontent.com/glace-y/Image-Folder/d8b80dde30feda995bac55fee01819e9b2510c5b/rocket.png';
-            spaceship.style.maxlength = '50px';
-            spaceship.style.maxWidth = '50px';
-            spaceship.style.position = 'absolute';
-            spaceship.style.top = '48%';
-            spaceship.style.left = '50%';
-            spaceship.style.transform = 'translate(-50%, -50%)';
-            spaceship.style.transition = 'top 1s, left 1s';
-            document.body.appendChild(spaceship);
-        });
     </script>
 </body>
 </html>
