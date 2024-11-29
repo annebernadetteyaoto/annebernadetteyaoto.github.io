@@ -148,7 +148,7 @@ function generateSection(page) {
               ${index !== 0 ? `<h1 class="mb-4">${sec.heading}</h1>` : ''} 
               ${index !== 0 ? `<h3>${sec.subheading || ''}</h3>` : ''} 
               ${content}
-              ${sec.link ? `<a href="${sec.link}" class="btn btn-light mt-3">Learn More</a>` : ''}
+              ${sec.link ? `<a href="${sec.link}" class="btn btn-light mt-3 text-black">Learn More</a>` : ''}
             </div>
           </div>
         `;
