@@ -138,7 +138,7 @@ function generateSection(page) {
             }
         } else if (sec.contactInfo) {
             for (var key in sec.contactInfo) {
-                content += `<p><strong>${key}:</strong> <a href="${key === 'email' ? 'mailto:' + sec.contactInfo[key] : sec.contactInfo[key]}" target="_blank" class="text-white">${sec.contactInfo[key]}</a></p>`;
+                content += `<p><strong>${key}:</strong> <a href="${key === 'email' ? 'mailto:' + sec.contactInfo[key] : sec.contactInfo[key]}" target="_blank">${sec.contactInfo[key]}</a></p>`;
             }
         }
 
