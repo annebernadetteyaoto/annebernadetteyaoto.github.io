@@ -43,11 +43,11 @@
     z-index: -1;
 }
 
-a {
+.section a {
     text-decoration: none;
-    color: #ffffff; 
+    color: white; 
 }
 
-a:hover {
+.section a:hover {
     text-decoration: underline;
 }
