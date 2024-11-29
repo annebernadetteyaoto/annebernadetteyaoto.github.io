@@ -126,7 +126,7 @@ function generateSection(page) {
                         <p class="card-text">${project.type}</p>
                       </div>
                       <div class="card-footer">
-                        <a href="${project.link}" class="btn btn-light">View Project</a>
+                        <a href="${project.link}" class="btn btn-primary">View Project</a>
                       </div>
                     </div>
                   </div>`;
