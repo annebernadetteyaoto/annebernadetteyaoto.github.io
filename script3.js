@@ -73,19 +73,16 @@ function generateSection(page) {
                     {
                         'name': 'Valorant API v2',
                         'type': 'SAM Activity',
-                        'image': 'images/valorant.png',
                         'link': 'projects/valorant_api_v2/index.html'
                     },
                     {
                         'name': 'Place Website',
                         'type': 'SAM Activity',
-                        'image': 'images/prague.png',
                         'link': 'projects/sam_act_02/index.html'
                     },
                     {
                         'name': 'Parallax',
                         'type': 'ADET Activity',
-                        'image': 'images/parallax.png',
                         'link': 'projects/parallax/index.html'
                     }
                 ],
@@ -124,10 +121,9 @@ function generateSection(page) {
                 content += `
                   <div class="col">
                     <div class="card h-100 bg-dark text-white border-light">
-                      <img src="${project.image}" class="card-img-top" alt="${project.name}">
                       <div class="card-body">
                         <h5 class="card-title">${project.name}</h5>
-                        <p class="card-text">${project.description}</p>
+                        <p class="card-text">${project.type}</p>
                       </div>
                       <div class="card-footer">
                         <a href="${project.link}" class="btn btn-light">View Project</a>
