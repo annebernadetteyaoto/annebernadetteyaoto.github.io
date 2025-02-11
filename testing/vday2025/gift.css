@@ -1,0 +1,89 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.flower {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stem {
+    width: 5px;
+    height: 150px;
+    background-color: green;
+    position: relative;
+}
+
+.leaf {
+    width: 20px;
+    height: 10px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.leaf.left {
+    left: -15px;
+    top: 50px;
+    transform: rotate(-30deg);
+}
+
+.leaf.right {
+    right: -15px;
+    top: 80px;
+    transform: rotate(30deg);
+}
+
+.petal {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.center {
+    width: 20px;
+    height: 20px;
+    background-color: yellow;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.petal-1 { top: -25px; left: -15px; }
+.petal-2 { top: -25px; right: -15px; }
+.petal-3 { top: -40px; left: 0px; }
+.petal-4 { top: -40px; right: 0px; }
+.petal-5 { top: -50px; left: 50%; transform: translateX(-50%); }
+
+.message {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #d63333;
+}
+
+.envelope-button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #d63333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
