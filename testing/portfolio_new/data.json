@@ -1,0 +1,18 @@
+{
+    "personal_details": {
+      "birthday": "8 August 2003",
+      "age": 21,
+      "gender": "Female",
+      "country": "Philippines",
+      "email": "annebernadetteyaoto@gmail.com",
+      "contact_number": "+63 965 231 5866"
+    },
+    "likes": [],
+    "affiliations": [],
+    "hobbies": [],
+    "skills": {
+      "technical": [],
+      "soft_skills": []
+    }
+  }
+  
