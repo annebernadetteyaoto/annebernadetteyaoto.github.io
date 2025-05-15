@@ -1,0 +1,20 @@
+HOW TO INSTALL NODE.JS AND PACKAGES
+
+1. Download Node.js (LTS) from https://nodejs.org/en
+2. Run the installer
+3. Open command prompt and type "node -v" (no quotation marks). You should see the Node.js version printed (e.g. v22.14.0).
+4. Verify if npm (Node package manager) installed by typing "npm -v". You should see something like "10.9.2"
+5. Create a folder where you want the project to be and navigate to that folder (e.g. C:\Users\User\Desktop\attendance-system) and type in command prompt "cd path\to\folder" (e.g. cd C:\Users\User\Desktop\attendance-system)
+6. Type this to install the packages needed for the app: npm install express multer xlsx
+
+HOW TO RUN THE SERVER
+
+1. Open command prompt and navigate to your folder (e.g. cd C:\Users\User\Desktop\attendance-system)
+2. Run the server by typing "npm start" in command prompt. You should see this message: Server is running at http://localhost:3000
+3. Open a web browser and go to http://localhost:3000
+
+IMPORTANT: Do not close command prompt while the server is running.
+
+HOW TO STOP THE SERVER
+1. Switch to command prompt and press ctrl+c
+2. Answer the prompt with "y" if you want to stop the server and "n" if not.

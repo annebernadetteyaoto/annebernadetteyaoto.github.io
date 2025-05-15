@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload Attendance</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <!--Bootstrap CSS-->
+ </head>
+
+<body>
+  <nav class="navbar" style="background-color: #134991;">
+    <div class="container-fluid py-0">
+      <a class="navbar-brand" href="#">
+        <img src="dict-logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-text-center">
+        <span class="text-white"> Department of Information and Communications Technology Region IV-A Laguna </span>
+      </a>
+    </div>
+  </nav>
+  <div class="container-fluid p-3">
+    <p class="fs-1 fw-bold">Attendance Tracker</p>
+
+    <form action="/upload" method="POST" enctype="multipart/form-data">
+      <div class="mb-3">
+        <label for="seminarName" class="fw-bold">Seminar Name:</label>
+        <input type="text" class="form-control" id="seminarName" name="seminarName" style="width:100%" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="seminarName" class="fw-bold">Date:</label>
+        <input type="text" class="form-control" id="date" name="date" style="width:100%" required>
+      </div>
+
+      <div class="mb-3">
+        <label for="attendanceFiles" class="form-label fw-bold">Upload Attendance Files:</label>
+        <input class="form-control" type="file" name="attendanceFiles" id="attendanceFiles" accept=".xlsx" multiple required>
+      </div>
+
+      <button type="submit" class="btn btn-success">Upload Attendance Files</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+    crossorigin="anonymous"></script> <!--Bootstrap JS-->
+</body>
+
+</html>
