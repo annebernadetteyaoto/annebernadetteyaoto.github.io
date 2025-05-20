@@ -1,0 +1,57 @@
+Seminar: Cybersecurity Basics
+Date: March 25-29, 2025
+
+Total Days of Training: 4
+
+--- Sex Count ---
+Female: 10
+Male: 9
+
+--- Sector Count ---
+National Government Agency: 2
+Local Government Unit: 2
+State Universities and Colleges: 2
+MSMEs: 2
+Out of School Youth and Adult (OSYA): 2
+Overseas Filipino Worker (OFW): 2
+Private: 2
+Others: 2
+Student: 3
+
+--- Sex Count per Sector ---
+
+National Government Agency:
+  Female: 3
+  Male: 2
+
+Local Government Unit:
+  Male: 2
+  Female: 2
+
+State Universities and Colleges:
+  Female: 4
+  Male: 3
+
+MSMEs:
+  Male: 2
+  Female: 1
+
+Out of School Youth and Adult (OSYA):
+  Female: 3
+  Male: 2
+
+Overseas Filipino Worker (OFW):
+  Male: 2
+  Female: 1
+
+Private:
+  Male: 2
+  Female: 2
+
+Others:
+  Female: 1
+  Male: 2
+
+Student:
+  Female: 4
+  Male: 2
