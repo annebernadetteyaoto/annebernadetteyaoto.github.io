@@ -1,54 +1,61 @@
-Seminar: Cybersecurity Basics
+Seminar: Cybersecurity basics
+Seminar Code: 101-2025
 Date: March 25-29, 2025
+Mode: Online
+Venue: Zoom
 
-Total Days of Training: 2
+Total Days of Training: 4
+Total People ATtended: 19
 
 --- Sex Count ---
-Female: 8
-Male: 7
+Female: 10
+Male: 9
 
 --- Sector Count ---
 National Government Agency: 2
 Local Government Unit: 2
 State Universities and Colleges: 2
 MSMEs: 2
-Out of School Youth and Adult (OSYA): 1
+Out of School Youth and Adult (OSYA): 2
 Overseas Filipino Worker (OFW): 2
-Private: 1
+Private: 2
 Others: 2
-Student: 1
+Student: 3
 
 --- Sex Count per Sector ---
 
 National Government Agency:
-  Female: 2
-  Male: 1
-
-Local Government Unit:
-  Male: 1
-  Female: 1
-
-State Universities and Colleges:
-  Female: 2
+  Female: 3
   Male: 2
 
+Local Government Unit:
+  Male: 2
+  Female: 2
+
+State Universities and Colleges:
+  Female: 4
+  Male: 3
+
 MSMEs:
-  Male: 1
+  Male: 2
   Female: 1
 
 Out of School Youth and Adult (OSYA):
-  Female: 2
+  Female: 3
+  Male: 2
 
 Overseas Filipino Worker (OFW):
-  Male: 1
+  Male: 2
   Female: 1
 
 Private:
   Male: 2
+  Female: 2
 
 Others:
   Female: 1
-  Male: 1
+  Male: 2
 
 Student:
-  Female: 1
+  Female: 4
+  Male: 2

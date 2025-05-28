@@ -29,6 +29,8 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
   const seminarName = req.body.seminarName || 'Seminar';
   const seminarCode = req.body.seminarCode || 'Code';
   const date = req.body.date || 'Date';
+  const mode = req.body.mode || 'Mode';
+  const venue = req.body.venue || 'Venue';
 
   if (attendanceFiles.length === 0) return res.status(400).send('No attendance files uploaded.');
 
@@ -50,8 +52,7 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
   const sexCount = {};
   const sectorCount = {};
   const sexPerSectorCount = {};
-
-
+  
   attendanceData.forEach(attendee => {
     const name = attendee["Full Name"] || attendee["Name"] || "Unknown";
     const email = attendee["Email"] || "No Email";
@@ -91,6 +92,8 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
     }
   }
 
+  const totalPeople = Object.keys(attendanceMap).length;
+
   // Create Excel workbooks
   const completedWorkbook = xlsx.utils.book_new();
   const incompleteWorkbook = xlsx.utils.book_new();
@@ -102,11 +105,11 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
   xlsx.utils.book_append_sheet(incompleteWorkbook, incompleteSheet, "Incomplete");
 
   // Sanitize filename parts
-  const safeSeminarName = seminarName.replace(/[^a-z0-9]/gi, '_');
+  const safeSeminarCode = seminarCode.replace(/[^a-z0-9]/gi, '_');
   const safeDate = date.replace(/[^a-z0-9]/gi, '_');
 
-  const completedFileName = `Completed_Attendance_${safeSeminarName}_${safeDate}.xlsx`;
-  const incompleteFileName = `Incomplete_Attendance_${safeSeminarName}_${safeDate}.xlsx`;
+  const completedFileName = `Completed_Attendance_${safeSeminarCode}_${safeDate}.xlsx`;
+  const incompleteFileName = `Incomplete_Attendance_${safeSeminarCode}_${safeDate}.xlsx`;
 
   const completedFilePath = path.join(__dirname, 'public', completedFileName);
   const incompleteFilePath = path.join(__dirname, 'public', incompleteFileName);
@@ -115,7 +118,7 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
   xlsx.writeFile(incompleteWorkbook, incompleteFilePath);
 
   // Prepare totals.txt content
-  let totalsText = `Seminar: ${seminarName}\nDate: ${date}\n\nTotal Days of Training: ${totalDays}\n\n`;
+  let totalsText = `Seminar: ${seminarName}\nSeminar Code: ${seminarCode}\nDate: ${date}\nMode: ${mode}\nVenue: ${venue}\n\nTotal Days of Training: ${totalDays}\nTotal People ATtended: ${totalPeople}\n\n`;
 
   totalsText += `--- Sex Count ---\n`;
   for (const sex in sexCount) {
@@ -136,7 +139,7 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
   }
 
   // Save to a .txt file
-  const totalsFileName = `Attendance_Totals_${safeSeminarName}_${safeDate}.txt`;
+  const totalsFileName = `Attendance_Totals_${safeSeminarCode}_${safeDate}.txt`;
   const totalsFilePath = path.join(__dirname, 'public', totalsFileName);
   fs.writeFileSync(totalsFilePath, totalsText);
 
@@ -236,8 +239,11 @@ app.post('/upload', upload.fields([{ name: 'attendanceFiles', maxCount: 31 }]), 
         <h3 class="pb-2">Seminar Information:</h3>
         <p><strong>Seminar Name:</strong> ${seminarName}</p>
         <p><strong>Seminar Code:</strong> ${seminarCode}</p>
+        <p><strong>Mode:</strong> ${mode}</p>
+        <p><strong>Venue:</strong> ${venue}</p>
         <p><strong>Date:</strong> ${date}</p>
         <p><strong>Total Days of Training:</strong> ${totalDays}</p>
+        <p><strong>Total People Attended:</strong> ${totalPeople}</p>
       </div>
 
       <div class="row mb-4 p-2 border-top border-bottom border-black" id="attendance">

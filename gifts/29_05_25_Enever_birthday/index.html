@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birthday Card</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to top right, #ffe5ec, #fef6f9);
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+            max-width: 500px;
+            width: 90%;
+        }
+
+        h2 {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+            color: #d6336c;
+        }
+
+        .cake {
+            position: relative;
+            margin: 2rem auto 3rem;
+            height: 140px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .cake-base {
+            width: 200px;
+            height: 100px;
+            background: #ffb3c1;
+            border-radius: 0 0 20px 20px;
+            position: absolute;
+            bottom: 0;
+            box-shadow: inset 0 5px 0 #e06679;
+        }
+
+        .candles {
+            display: flex;
+            gap: 10px;
+            position: absolute;
+            top: 10px;
+            z-index: 1;
+        }
+
+        .candle {
+            width: 20px;
+            height: 50px;
+            background: #fff;
+            border-radius: 4px;
+            text-align: center;
+            font-weight: bold;
+            color: #ff69b4;
+            line-height: 50px;
+            box-shadow: inset 0 -5px 0 #ffc0cb;
+            position: relative;
+        }
+
+        .flame {
+            width: 12px;
+            height: 20px;
+            background: radial-gradient(circle, #ffeb3b 0%, #ff9800 60%);
+            border-radius: 50%;
+            position: absolute;
+            top: -25px;
+            left: 4px;
+            animation: flicker 0.2s infinite;
+        }
+
+        @keyframes flicker {
+            0% {
+                transform: scale(1);
+                opacity: 1;
+            }
+
+            50% {
+                transform: scale(1.1);
+                opacity: 0.8;
+            }
+
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        button {
+            margin: 0.5rem;
+            padding: 0.5rem 1rem;
+            border: none;
+            background: #ff5e91;
+            color: white;
+            font-size: 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        button:hover {
+            background: #ff3e77;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Happy 28th Birthday!</h2>
+        <div class="cake">
+            <div class="candles">
+                <div class="candle" id="candle2">
+                    2
+                    <div class="flame" id="flame2"></div>
+                </div>
+                <div class="candle" id="candle8">
+                    8
+                    <div class="flame" id="flame8"></div>
+                </div>
+            </div>
+            <div class="cake-base"></div>
+        </div>
+        <button onclick="blowCandles()">🎂 Blow Candles</button>
+        <button onclick="openMessage()">💌 Open Message</button>
+        <button onclick="startMusic()">🎵 Play Music</button>
+    </div>
+
+    <div style="display: none;">
+        <iframe id="ytplayer" width="0" height="0" frameborder="0" allow="autoplay"></iframe>
+    </div>
+
+    <script>
+        function startMusic() {
+            const iframe = document.getElementById("ytplayer");
+            iframe.src = "https://www.youtube.com/embed/vNCDAvLxy_Y?autoplay=1&loop=1&playlist=vNCDAvLxy_Y";
+        }
+    </script>
+
+    <script>
+        function blowCandles() {
+            document.getElementById('flame2')?.remove();
+            document.getElementById('flame8')?.remove();
+        }
+
+        function openMessage() {
+            window.location.href = "message.html"; // Make sure this file exists in the same folder
+        }
+    </script>
+</body>
+
+</html>
