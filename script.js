@@ -61,11 +61,11 @@ async function loadProjects() {
         .join("");
 
       const demoLink = project.demo
-        ? <a href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+        ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo ↗</a>`
         : "";
 
       const githubLink = project.github
-        ? <a href="${project.github}" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+        ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer">Source code ↗</a>`
         : "";
 
       const links = [demoLink, githubLink].filter(Boolean).join("");
