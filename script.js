@@ -23,60 +23,60 @@ if (year) {
 
 
 async function loadProjects() {
-    console.log("Loading projects...");
+  console.log("Loading projects...");
 
-    const container = document.querySelector("#project-container");
-    console.log("Container found:", container);
+  const container = document.querySelector("#project-container");
+  console.log("Container found:", container);
 
-    if (!container) {
-        console.error("Project container not found!");
-        return;
+  if (!container) {
+    console.error("Project container not found!");
+    return;
+  }
+
+  try {
+    console.log("Fetching JSON...");
+
+    const response = await fetch("assets/projects.json");
+    console.log("Response:", response);
+
+    if (!response.ok) {
+      throw new Error("Could not load project data.");
     }
 
-    try {
-        console.log("Fetching JSON...");
+    const data = await response.json();
+    console.log("JSON data:", data);
 
-        const response = await fetch("assets/projects.json");
-        console.log("Response:", response);
+    let projects = data.projects;
+    const view = container.dataset.view;
 
-        if (!response.ok) {
-            throw new Error("Could not load project data.");
-        }
+    if (view === "featured") {
+      projects = projects
+        .filter(project => project.featured)
+        .slice(0, 3);
+    }
 
-        const data = await response.json();
-        console.log("JSON data:", data);
+    container.innerHTML = projects.map((project, index) => {
+      const features = project.features
+        .map(feature => `<span>${feature}</span>`)
+        .join("");
 
-        let projects = data.projects;
-        const view = container.dataset.view;
+      const demoLink = project.demo
+        ? <a href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo ↗</a>
+        : "";
 
-        if (view === "featured") {
-            projects = projects
-                .filter(project => project.featured)
-                .slice(0, 3);
-        }
+      const githubLink = project.github
+        ? <a href="${project.github}" target="_blank" rel="noopener noreferrer">Source code ↗</a>
+        : "";
 
-        container.innerHTML = projects.map((project, index) => {
-            const features = project.features
-                .map(feature => `<span>${feature}</span>`)
-                .join("");
+      const links = [demoLink, githubLink].filter(Boolean).join("");
 
-            const demoLink = project.demo
-                ? `<a href="${project.demo}" target="_blank" rel="noopener noreferrer">Live demo ↗</a>`
-                : "";
+      const stageClass = project.stage.toLowerCase() === "finished"
+        ? "status-finished"
+        : project.stage.toLowerCase() === "unfinished"
+          ? "status-unfinished"
+          : "status-revision";
 
-            const githubLink = project.github
-                ? `<a href="${project.github}" target="_blank" rel="noopener noreferrer">Source code ↗</a>`
-                : "";
-
-            const links = [demoLink, githubLink].filter(Boolean).join("");
-
-            const stageClass = project.stage.toLowerCase() === "finished"
-                ? "status-finished"
-                : project.stage.toLowerCase() === "unfinished"
-                    ? "status-unfinished"
-                    : "status-revision";
-
-            return `
+      return `
                 <article class="project-card">
                     <div class="project-visual">
                         <span class="visual-label">
@@ -99,20 +99,20 @@ async function loadProjects() {
                             <span>${project.date}</span>
                         </div>
 
-                        ${links ? `<div class="project-links">${links}</div>` : ""}
+                        ${links ? <div class="project-links">${links}</div> : ""}
                     </div>
                 </article>
             `;
-        }).join("");
+    }).join("");
 
-        if (projects.length === 0) {
-            container.innerHTML = "<p>No projects to display yet.</p>";
-        }
-
-    } catch (error) {
-        console.error("Error loading projects:", error);
-        container.innerHTML = "<p>Projects could not be loaded.</p>";
+    if (projects.length === 0) {
+      container.innerHTML = "<p>No projects to display yet.</p>";
     }
+
+  } catch (error) {
+    console.error("Error loading projects:", error);
+    container.innerHTML = "<p>Projects could not be loaded.</p>";
+  }
 }
 
 loadProjects();
