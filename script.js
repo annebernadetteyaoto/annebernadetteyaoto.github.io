@@ -116,5 +116,3 @@ async function loadProjects() {
 }
 
 loadProjects();
-
-loadProjects();
