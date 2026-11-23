@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Glace's Website">
+  <meta property="og:description" content="Hi, I'm Glace, and welcome to my website! I'm using this to keep track of my video game clips, my personal website/app/game projects and concepts, my personal recipes, stories that I've made, and basically any other info about myself. Consider this as a place to really get to know me.">
+  <meta property="og:image" content="https://github.com/annebernadetteyaoto/annebernadetteyaoto.github.io/blob/master/images/Glace%20logo.png?raw=true">
+  <meta property="og:url" content="https://www.annebernadetteyaoto.github.io">
+  <meta property="og:type" content="website">
+  <title>Glace's Website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.css">
+  <link rel="stylesheet" href="styles2.css">
+  <link rel="icon" href="/images/glace.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="navbar" id="navbar"></div>
+  <div class="container-fluid p-0" id="fullpage"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
+  <script src="script3.js"></script>
+
+  <script>
+    window.onload = function() {
+      alert("This page is under design construction.");
+    };
+    generateNavbar();
+    generateSection("index.html");
+    new fullpage('#fullpage', {
+      autoScrolling: true,
+      navigation: true,
+    });
+  </script>
+</body>
+
+</html>
