@@ -45,7 +45,6 @@ async function loadProjects() {
         const data = await response.json();
         console.log("JSON data:", data);
         console.log("Projects:", data.projects);
-        
   const container = document.querySelector("#project-container");
 
   if (!container) return;
@@ -127,5 +126,5 @@ async function loadProjects() {
     container.innerHTML = "<p>Projects could not be loaded.</p>";
   }
 }
-
+}
 loadProjects();
