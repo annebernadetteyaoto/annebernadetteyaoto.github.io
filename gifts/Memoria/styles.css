@@ -1,0 +1,78 @@
+body {
+    background-color: #1E4D3B;
+    background-image: url('https://www.transparenttextures.com/patterns/asfalt-dark.png');
+    background-repeat: repeat; /* or repeat-x / repeat-y */
+    background-size: auto; /* or cover for a larger subtle effect */
+    background-blend-mode: luminosity; /* makes texture mix with color */
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    color: antiquewhite;
+}
+
+.quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    color: #D4AF6C;
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.quote-container .quote {
+    padding: 0 15px; /* space between text and lines */
+}
+
+.quote-container .line {
+    flex: 1;
+    height: 2px;
+    background: linear-gradient(to right, #D4AF6C, rgba(212,175,108,0));
+}
+
+/* Left line fades out toward the text */
+.quote-container .line.left {
+    background: linear-gradient(to left, #D4AF6C, rgba(212,175,108,0));
+    margin-right: 10px;
+}
+
+/* Right line fades out away from the text */
+.quote-container .line.right {
+    background: linear-gradient(to right, #D4AF6C, rgba(212,175,108,0));
+    margin-left: 10px;
+}
+
+.gold-btn {
+    background-color: transparent;   /* transparent button */
+    color: #D4AF6C;                  /* gold text */
+    border: 2px solid #D4AF6C;       /* gold border */
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-family: 'Georgia', serif;
+    transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+    background-color: #D4AF6C;  /* gold fill on hover */
+    color: #3A7A5E;             /* dark green text on hover */
+    cursor: pointer;
+}
+
+.last-updated {
+  position: absolute;       /* fixed at a corner relative to body */
+  bottom: 10px;             /* 10px from bottom */
+  right: 20px;              /* 20px from right */
+  font-size: 0.9em;         /* smaller text */
+  color: #D4AF6C;           /* gold text */
+  font-family: 'Georgia', serif; /* elegant, readable */
+  z-index: 2;               /* above background but below popups if any */
+}
+
