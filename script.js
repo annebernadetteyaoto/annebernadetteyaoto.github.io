@@ -22,6 +22,30 @@ if (year) {
 }
 
 async function loadProjects() {
+   console.log("Loading projects...");
+
+    const container = document.querySelector("#project-container");
+    console.log("Container found:", container);
+
+    if (!container) {
+        console.error("Project container not found!");
+        return;
+    }
+
+    try {
+        console.log("Fetching JSON...");
+
+        const response = await fetch("assets/projects.json");
+        console.log("Response:", response);
+
+        if (!response.ok) {
+            throw new Error("Could not load project data.");
+        }
+
+        const data = await response.json();
+        console.log("JSON data:", data);
+        console.log("Projects:", data.projects);
+        
   const container = document.querySelector("#project-container");
 
   if (!container) return;
