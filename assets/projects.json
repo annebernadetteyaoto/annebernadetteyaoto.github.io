@@ -1,0 +1,148 @@
+{
+  "projects": [
+    {
+      "header": "Valorant API v2",
+      "description": "A web project using the Valorant API to display game-related information.",
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+      "date": "16 November 2024",
+      "type": "Academic Project",
+      "stage": "Finished",
+      "featured": true,
+      "demo": "https://annebernadetteyaoto.github.io/projects/valorant_api_v2/",
+      "github": "",
+      "image": "images/valorant.png"
+    },
+    {
+      "header": "Mentalk",
+      "description": "A collaborative project developed as part of my academic coursework.",
+      "features": ["HTML", "CSS", "JavaScript", "PHP", "Responsive"],
+      "date": "7 February 2024",
+      "type": "Academic Project",
+      "stage": "Finished",
+      "featured": true,
+      "demo": "",
+      "github": "https://github.com/itsdamnrj/MENTALK-REPO",
+      "image": "images/mentalk.png"
+    },
+    {
+      "header": "The Coffee Bud",
+      "description": "A coffee shop website created as a web development activity.",
+      "features": ["HTML", "CSS", "JavaScript"],
+      "date": "26 November 2023",
+      "type": "Academic Project",
+      "stage": "To be revised",
+      "featured": true,
+      "demo": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud/",
+      "github": "",
+      "image": "images/tcb.png"
+    },
+    {
+      "header": "Place Website",
+      "description": "A website project featuring a place or destination.",
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+      "date": "19 October 2024",
+      "type": "Academic Project",
+      "stage": "Unfinished",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/sam_act_02/",
+      "github": "",
+      "image": "images/prague.png"
+    },
+    {
+      "header": "Parallax",
+      "description": "A web design experiment using parallax scrolling effects.",
+      "features": ["HTML", "CSS", "JavaScript"],
+      "date": "13 July 2024",
+      "type": "Academic Project",
+      "stage": "To be revised",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/parallax/",
+      "github": "",
+      "image": "images/parallax.png"
+    },
+    {
+      "header": "Error 404 Website",
+      "description": "A creative website built around a 404 error page concept.",
+      "features": ["HTML", "CSS", "JavaScript"],
+      "date": "13 July 2024",
+      "type": "Academic Project",
+      "stage": "Finished",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/error_404/",
+      "github": "",
+      "image": "images/error404.png"
+    },
+    {
+      "header": "The Searcher Website",
+      "description": "An academic project developed using PHP and front-end technologies.",
+      "features": ["HTML", "CSS", "JavaScript", "PHP", "Bootstrap"],
+      "date": "26 June 2024",
+      "type": "Academic Project",
+      "stage": "Unfinished",
+      "featured": false,
+      "demo": "",
+      "github": "",
+      "image": "images/searcher.png"
+    },
+    {
+      "header": "Valorant API",
+      "description": "An earlier experiment working with the Valorant API.",
+      "features": ["HTML", "CSS", "JavaScript", "API"],
+      "date": "22 January 2024",
+      "type": "Academic Project",
+      "stage": "Finished",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/valorant_api/",
+      "github": "",
+      "image": "images/valorant.png"
+    },
+    {
+      "header": "The Coffee Bud (Starbucks)",
+      "description": "A website inspired by the Starbucks brand.",
+      "features": ["HTML", "CSS", "JavaScript", "Responsive"],
+      "date": "13 December 2023",
+      "type": "Academic Project",
+      "stage": "Unfinished",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/the_coffee_bud_starbucks/",
+      "github": "",
+      "image": "images/tcbsb.png"
+    },
+    {
+      "header": "Personal Website",
+      "description": "An early personal website created for an object-oriented programming activity.",
+      "features": ["HTML"],
+      "date": "Unknown",
+      "type": "Academic Project",
+      "stage": "To be revised",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/oop_midterm_website/",
+      "github": "",
+      "image": "images/personal.png"
+    },
+    {
+      "header": "PUP Website",
+      "description": "A website project based on the Polytechnic University of the Philippines.",
+      "features": ["HTML"],
+      "date": "Unknown",
+      "type": "Academic Project",
+      "stage": "To be revised",
+      "featured": false,
+      "demo": "https://annebernadetteyaoto.github.io/projects/pup_website/",
+      "github": "",
+      "image": "images/pup.png"
+    },
+    {
+      "header": "UnlockIT",
+      "description": "An academic project developed for object-oriented programming and information management.",
+      "features": ["HTML", "CSS", "JavaScript", "PHP"],
+      "date": "Unknown",
+      "type": "Academic Project",
+      "stage": "To be revised",
+      "featured": false,
+      "demo": "",
+      "github": "",
+      "image": "images/unlockit.png"
+    }
+  ]
+}
