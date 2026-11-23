@@ -57,7 +57,7 @@ async function loadProjects() {
 
     container.innerHTML = projects.map((project, index) => {
       const features = project.features
-        .map(feature => <span>${feature}</span>)
+        .map(feature => `<span>${feature}</span>`)
         .join("");
 
       const demoLink = project.demo
