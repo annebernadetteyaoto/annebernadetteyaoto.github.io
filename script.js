@@ -99,7 +99,7 @@ async function loadProjects() {
                             <span>${project.date}</span>
                         </div>
 
-                        ${links ? <div class="project-links">${links}</div> : ""}
+                        ${links ? `<div class="project-links">${links}</div>` : ""}
                     </div>
                 </article>
             `;
