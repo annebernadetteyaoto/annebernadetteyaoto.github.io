@@ -1055,6 +1055,10 @@ pre i {
     font-weight: 700;
 }
 
+.coursework-details summary::marker {
+    content: "";
+}
+
 .coursework-details summary::-webkit-details-marker {
     display: none;
 }
