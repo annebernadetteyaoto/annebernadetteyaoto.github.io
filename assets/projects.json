@@ -1,9 +1,33 @@
 {
   "projects": [
+     {
+      "header": "Attendance and Demographic Reporting System",
+      "description": "A locally-hosted webpage designed to summarize and analyze the attendance and demographics of individuals participating in seminars",
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Node.js"],
+      "date": "June 2025",
+      "type": "Internship Project",
+      "stage": "Finished",
+      "featured": true,
+      "demo": "",
+      "github": "",
+      "image": "images/DICT Laguna.png"
+    },
+    {
+      "header": "JuanGPT: A Conversational AI for Enhanced Accessibility to the Philippine Demographics and Social Statistics Data using Retrieval Augmented Generation",
+      "description": "An AI chatbot designed to simplify data retrieval and improve accessibility for retrieving demographics and social statistics data from Philippine Statistics Authority",
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Python"],
+      "date": "June 2025",
+      "type": "Internship Project",
+      "stage": "Finished",
+      "featured": true,
+      "demo": "",
+      "github": "https://github.com/Mark-Jayson/RAGSample",
+      "image": "images/JuanGPT.png"
+    },
     {
       "header": "Valorant API v2",
       "description": "A web project using the Valorant API to display game-related information.",
-      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap"],
       "date": "16 November 2024",
       "type": "Academic Project",
       "stage": "Finished",
@@ -15,7 +39,7 @@
     {
       "header": "Mentalk",
       "description": "A collaborative project developed as part of my academic coursework.",
-      "features": ["HTML", "CSS", "JavaScript", "PHP", "Responsive"],
+      "features": ["HTML", "CSS", "JavaScript", "PHP"],
       "date": "7 February 2024",
       "type": "Academic Project",
       "stage": "Finished",
@@ -39,7 +63,7 @@
     {
       "header": "Place Website",
       "description": "A website project featuring a place or destination.",
-      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "Responsive"],
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap"],
       "date": "19 October 2024",
       "type": "Academic Project",
       "stage": "Finished",
