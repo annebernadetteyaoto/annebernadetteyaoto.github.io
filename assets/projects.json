@@ -19,7 +19,7 @@
       "date": "June 2025",
       "type": "Internship Project",
       "stage": "Finished",
-      "featured": true,
+      "featured": false,
       "demo": "",
       "github": "",
       "image": "images/DICT Laguna.jpg"
@@ -43,7 +43,7 @@
       "date": "16 November 2024",
       "type": "Academic Project",
       "stage": "Finished",
-      "featured": true,
+      "featured": false,
       "demo": "https://annebernadetteyaoto.github.io/projects/valorant_api_v2/",
       "github": "",
       "image": "images/valorant.png"
