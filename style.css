@@ -841,10 +841,6 @@ pre i {
     line-height: 1.7;
 }
 
-.education-actions {
-    margin-top: 4px;
-}
-
 .button-secondary {
     display: inline-flex;
     padding: 12px 17px;
@@ -1040,5 +1036,57 @@ pre i {
         align-items: flex-start;
         flex-direction: column;
         gap: 12px;
+    }
+}
+
+.coursework-details {
+    padding: 14px 0;
+}
+
+.coursework-details summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    list-style: none;
+    color: var(--green);
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.coursework-details summary::-webkit-details-marker {
+    display: none;
+}
+
+.expand-label {
+    font: 10px var(--mono);
+    color: var(--muted);
+    white-space: nowrap;
+}
+
+.coursework-details[open] .expand-label {
+    font-size: 0;
+}
+
+.coursework-details[open] .expand-label::after {
+    content: "Hide courses −";
+    font-size: 10px;
+}
+
+.course-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 24px;
+    padding-left: 18px;
+    margin-top: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+@media (max-width: 600px) {
+    .course-list {
+        grid-template-columns: 1fr;
     }
 }
