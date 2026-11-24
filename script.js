@@ -21,7 +21,6 @@ if (year) {
   year.textContent = new Date().getFullYear();
 }
 
-
 async function loadProjects() {
   console.log("Loading projects...");
 

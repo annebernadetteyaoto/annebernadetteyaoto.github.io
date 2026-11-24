@@ -800,3 +800,245 @@ pre i {
     color: #e0f5e1;
     border-color: #e0f5e1;
 }
+
+.education-content h3 {
+    margin-bottom: 6px;
+}
+
+.institution {
+    color: var(--muted);
+    margin-bottom: 22px;
+}
+
+.education-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.education-block h4 {
+    font-family: var(--mono);
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.course-list,
+.achievement-list {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 24px;
+    padding-left: 18px;
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+.education-block p {
+    color: var(--muted);
+    line-height: 1.7;
+}
+
+.education-actions {
+    margin-top: 4px;
+}
+
+.button-secondary {
+    display: inline-flex;
+    padding: 12px 17px;
+    border: 1px solid var(--line);
+    color: var(--text);
+    background: var(--panel);
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 12px;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.button-secondary:hover {
+    border-color: var(--green);
+    background: var(--panel2);
+}
+
+.credentials-hero {
+    padding-top: 125px;
+    padding-bottom: 65px;
+}
+
+.credentials-hero h1 {
+    font-size: clamp(42px, 7vw, 76px);
+    line-height: 1.1;
+    margin: 18px 0;
+}
+
+.credentials-hero h1 em {
+    color: var(--green);
+    font-style: normal;
+}
+
+.credentials-hero .intro {
+    max-width: 580px;
+    color: var(--muted);
+    line-height: 1.8;
+}
+
+.credentials-section {
+    padding-top: 55px;
+    padding-bottom: 65px;
+}
+
+.credential-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.credential-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 22px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    color: var(--text);
+    text-decoration: none;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.credential-card:hover,
+.certificate-card:hover {
+    border-color: var(--green);
+    transform: translateY(-3px);
+}
+
+.credential-icon {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 42px;
+    height: 42px;
+    background: var(--panel2);
+    border-radius: 5px;
+    color: var(--green);
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.credential-card h3,
+.document-item h3,
+.certificate-card h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.credential-card p,
+.document-item p,
+.certificate-card p {
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.credential-arrow {
+    margin-left: auto;
+    color: var(--green);
+}
+
+.document-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.document-type {
+    display: block;
+    color: var(--green);
+    font: 10px var(--mono);
+    letter-spacing: 1px;
+    margin-bottom: 9px;
+}
+
+.document-item .text-link {
+    flex-shrink: 0;
+    font-size: 12px;
+}
+
+.certificate-intro {
+    color: var(--muted);
+    font-size: 13px;
+    margin-bottom: 25px;
+}
+
+.certificate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 14px;
+}
+
+.certificate-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-width: 0;
+    padding: 22px;
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    transition: border-color 0.2s, transform 0.2s;
+}
+
+.certificate-card h3 {
+    line-height: 1.5;
+}
+
+.certificate-card p {
+    margin-bottom: 18px;
+}
+
+.certificate-card .text-link {
+    margin-top: auto;
+    font-size: 12px;
+}
+
+@media (max-width: 800px) {
+    .certificate-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .credentials-hero {
+        padding-top: 95px;
+        padding-bottom: 40px;
+    }
+
+    .credentials-section {
+        padding-top: 35px;
+        padding-bottom: 45px;
+    }
+
+    .credential-grid,
+    .certificate-grid,
+    .course-list,
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+    .document-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+    }
+}
