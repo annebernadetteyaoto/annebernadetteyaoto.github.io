@@ -1,5 +1,17 @@
 {
   "projects": [
+      {
+      "header": "Valorant API v3",
+      "description": "A webpage featuring different Valorant information.",
+      "features": ["HTML", "CSS", "JavaScript", "Bootstrap", "API"],
+      "date": "November 2026",
+      "type": "Personal Project",
+      "stage": "Ongoing",
+      "featured": true,
+      "demo": "https://annebernadetteyaoto.github.io/projects/valo_api_v3/",
+      "github": "",
+      "image": "images/valorant.png"
+     },
      {
       "header": "Attendance and Demographic Reporting System",
       "description": "A locally-hosted webpage designed to summarize and analyze the attendance and demographics of individuals participating in seminars",
