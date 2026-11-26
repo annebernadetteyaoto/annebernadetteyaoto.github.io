@@ -1,0 +1,353 @@
+/* =========================
+   WEAPON DETAIL PAGE
+========================= */
+
+.weapon-page {
+    flex: 1;
+}
+
+.weapon-page .back-button {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.weapon-page .back-button:hover {
+    color: var(--accent);
+}
+
+
+/* =========================
+   WEAPON PROFILE
+========================= */
+
+.weapon-profile {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+
+    padding: 35px;
+    margin-bottom: 65px;
+
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+}
+
+.weapon-portrait {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 1;
+    min-width: 0;
+    min-height: 200px;
+}
+
+.weapon-portrait img {
+    display: block;
+
+    width: 100%;
+    max-width: 480px;
+    max-height: 250px;
+
+    object-fit: contain;
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.4));
+}
+
+.weapon-information {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-label {
+    display: block;
+
+    margin-bottom: 12px;
+
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.weapon-information h1 {
+    margin-bottom: 12px;
+
+    color: var(--text);
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    font-weight: 800;
+    overflow-wrap: anywhere;
+}
+
+.weapon-information .weapon-category {
+    display: inline-block;
+
+    color: var(--muted);
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.weapon-information .weapon-price {
+    margin-top: 18px;
+
+    color: var(--accent);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+.weapon-section {
+    margin-bottom: 65px;
+}
+
+.weapon-section-heading {
+    margin-bottom: 25px;
+}
+
+.weapon-section-heading h2 {
+    color: var(--text);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   WEAPON STATS
+========================= */
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 15px;
+}
+
+.stat-card {
+    padding: 20px;
+
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+}
+
+.stat-label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.stat-value {
+    display: block;
+
+    color: var(--text);
+    font-size: 1.35rem;
+    font-weight: 700;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   DAMAGE TABLE
+========================= */
+
+.damage-table {
+    --bs-table-bg: var(--panel);
+    --bs-table-color: var(--text);
+    --bs-table-border-color: var(--border);
+
+    margin-bottom: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.damage-table th,
+.damage-table td {
+    padding: 16px;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.damage-table thead th {
+    color: var(--accent);
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.damage-table tbody td {
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   SKINS TOGGLE
+========================= */
+
+.skins-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+    padding: 18px 22px;
+
+    color: var(--text);
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.skins-toggle:hover {
+    background-color: var(--panel-secondary);
+    border-color: var(--accent);
+}
+
+#skinsArrow {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+
+/* =========================
+   SKIN GALLERY
+========================= */
+
+.skins-container {
+    padding-top: 25px;
+}
+
+.skin-card {
+    height: 100%;
+    padding: 18px;
+
+    background-color: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+
+    transition:
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.skin-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent);
+}
+
+.skin-image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 110px;
+    margin-bottom: 15px;
+}
+
+.skin-image {
+    display: block;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+}
+
+.skin-name {
+    margin: 0;
+
+    color: var(--text);
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .weapon-profile {
+        flex-direction: column;
+        gap: 20px;
+
+        padding: 25px;
+        text-align: center;
+    }
+
+    .weapon-portrait {
+        width: 100%;
+        min-height: 150px;
+    }
+
+    .weapon-portrait img {
+        max-height: 180px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 480px) {
+
+    .weapon-profile {
+        padding: 20px;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-card {
+        padding: 16px;
+    }
+
+    .weapon-section-heading h2 {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .skins-toggle,
+    .skin-card {
+        transition: none;
+    }
+
+    .skin-card:hover {
+        transform: none;
+    }
+
+}

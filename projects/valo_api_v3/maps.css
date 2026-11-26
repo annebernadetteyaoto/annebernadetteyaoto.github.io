@@ -1,0 +1,157 @@
+/* =========================
+   MAPS PAGE
+========================= */
+
+.maps-page {
+    flex: 1;
+}
+
+
+/* =========================
+   BACK NAVIGATION
+========================= */
+
+.maps-page .back-button {
+    display: inline-block;
+    color: var(--muted);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.maps-page .back-button:hover {
+    color: var(--accent);
+}
+
+
+/* =========================
+   MAP CARDS
+========================= */
+
+.map-card {
+    position: relative;
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    min-height: 230px;
+
+    padding: 30px;
+
+    background-color: var(--panel);
+    background-size: cover;
+    background-position: center;
+
+    border: 1px solid var(--border);
+    border-radius: 16px;
+
+    overflow: hidden;
+
+    transition:
+        transform 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.map-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+
+/* =========================
+   MAP INFORMATION
+========================= */
+
+.map-information {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    max-width: 75%;
+}
+
+.map-name {
+    margin-bottom: 25px;
+
+    color: var(--text);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+
+/* =========================
+   MAP DETAILS
+========================= */
+
+.map-details {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.map-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.map-label {
+    color: var(--muted);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.map-value {
+    color: var(--text);
+    font-size: 0.95rem;
+    font-weight: 500;
+    overflow-wrap: anywhere;
+}
+
+
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 576px) {
+
+    .map-card {
+        min-height: 210px;
+        padding: 22px;
+    }
+
+    .map-information {
+        max-width: 100%;
+    }
+
+    .map-name {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+
+    .map-value {
+        font-size: 0.85rem;
+    }
+
+}
+
+
+/* =========================
+   REDUCED MOTION
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .map-card {
+        transition: none;
+    }
+
+    .map-card:hover {
+        transform: none;
+    }
+
+}
