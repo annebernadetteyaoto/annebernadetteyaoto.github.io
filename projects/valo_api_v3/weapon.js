@@ -30,7 +30,7 @@ const getWeaponPrice = (weapon) => {
     const cost = weapon.shopData?.cost;
 
     if (cost === undefined || cost === null) {
-        return "Price unavailable";
+        return "";
     }
 
     return `${cost.toLocaleString("en-US")} Credits`;
