@@ -178,8 +178,13 @@ const displaySkins = (skins) => {
     }
 
     skins
-        .filter(skin => skin.displayName !== "Random Favorite Skin")
-        .sort((a, b) => a.displayName.localeCompare(b.displayName))
+        .filter(skin =>
+            skin.displayName !== "Random Favorite Skin" &&
+            !skin.displayName.startsWith("Standard ")
+        )
+        .sort((a, b) =>
+            a.displayName.localeCompare(b.displayName)
+        )
         .forEach(skin => {
             const image =
                 skin.displayIcon ||
